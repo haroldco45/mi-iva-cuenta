@@ -39,7 +39,7 @@ for (const q of BUSQUEDAS) {
 }
 
 const vistas = new Set();
-const relevante = /\bIVA\b|EfectIVA|ley de rescate|devoluci[oó]n del impuesto/i;
+const relevante = { test: t => /IVA|ley de rescate|devoluci[oó]n del impuesto/i.test(t) || /EfectIVA/.test(t) };
 const noticias = todas
   .filter(n => n.titulo && n.url && relevante.test(n.titulo))
   .filter(n => { const k = n.titulo.toLowerCase().replace(/\W+/g, ' ').slice(0, 80); if (vistas.has(k)) return false; vistas.add(k); return true; })
