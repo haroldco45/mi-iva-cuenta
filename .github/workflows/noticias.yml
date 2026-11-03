@@ -1,0 +1,30 @@
+name: Robot de noticias IVA
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: robot-noticias
+  cancel-in-progress: false
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Traer noticias
+        run: node scripts/noticias.mjs
+      - name: Guardar si hay cambios
+        run: |
+          git config user.name "robot-vibras"
+          git config user.email "robot@vibraspositivashm.com"
+          git add noticias.json
+          git diff --cached --quiet || (git commit -m "Noticias IVA $(TZ=America/Bogota date '+%Y-%m-%d %H:%M')" && git push)

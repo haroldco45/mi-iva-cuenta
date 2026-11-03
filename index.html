@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi IVA Cuenta · Anota el IVA de cada compra</title>
+<meta name="description" content="Anota el IVA que pagas en cada compra y prepárate para la devolución del IVA (EfectIVA). Una app de Vibras Positivas HM para el colombiano de a pie.">
+<meta name="theme-color" content="#0b3d2e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="Mi IVA Cuenta">
+<meta property="og:description" content="Anota el IVA de cada compra. Si le devuelven el IVA, usted ya sabe cuánto pagó.">
+<meta property="og:image" content="https://mi-iva-cuenta.netlify.app/flyer.png">
+<meta property="og:url" content="https://mi-iva-cuenta.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#0b3d2e; --verde2:#0f5a43; --lima:#c6f432; --amarillo:#ffd23f; --coral:#ff5d5d;
+  --crema:#fbf8ef; --tinta:#14201b; --gris:#5d6b64; --borde:#e2e6dc; --blanco:#fff;
+  --radio:18px; --sombra:0 10px 30px rgba(11,61,46,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.num{font-family:"Archivo Black",Inter,sans-serif;letter-spacing:-.01em}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+/* Barra superior */
+.top{position:sticky;top:0;z-index:50;background:rgba(11,61,46,.94);backdrop-filter:blur(10px);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:10px;height:60px}
+.marca{font-family:"Archivo Black";font-size:1.15rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.marca b{color:var(--lima)}
+.btn-top{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:6px 13px;font-weight:700;font-size:.82rem;cursor:pointer}
+.btn-top:hover{background:rgba(255,255,255,.12)}
+.btn-top.lima{background:var(--lima);border-color:var(--lima);color:var(--verde)}
+nav.tabs{background:var(--verde2);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{display:inline-block;color:#dff5ea;text-decoration:none;font-weight:600;font-size:.88rem;padding:10px 14px;border-bottom:3px solid transparent}
+nav.tabs a:hover,nav.tabs a.on{color:#fff;border-bottom-color:var(--lima)}
+
+/* Héroe */
+.hero{position:relative;color:#fff;overflow:hidden;min-height:520px;display:flex;align-items:flex-end}
+.hero .foto{position:absolute;inset:0;background:#0b3d2e center/cover no-repeat;transform:scale(1.08);animation:zoom 22s ease-in-out infinite alternate}
+@keyframes zoom{to{transform:scale(1.18) translate(-2%,-1%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,61,46,.25) 0%,rgba(11,61,46,.75) 55%,rgba(11,61,46,.97) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:70px;padding-bottom:34px;width:100%}
+.chip{display:inline-block;background:var(--amarillo);color:var(--verde);font-weight:800;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+.hero h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.02;margin:14px 0 10px;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--lima)}
+.hero p.lead{font-size:1.08rem;max-width:620px;opacity:.95}
+.marcadores{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:24px}
+.marcador{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:var(--radio);padding:16px;backdrop-filter:blur(6px)}
+.marcador small{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;opacity:.85;font-weight:600}
+.marcador .num{font-size:1.9rem;line-height:1.1;margin-top:4px}
+.marcador.lima .num{color:var(--lima)}
+.marcador.amar .num{color:var(--amarillo)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 22px;font-weight:800;cursor:pointer;text-decoration:none;font-size:1rem;transition:transform .15s,box-shadow .15s}
+.btn:active{transform:scale(.97)}
+.btn-lima{background:var(--lima);color:var(--verde);box-shadow:0 8px 24px rgba(198,244,50,.35)}
+.btn-lima:hover{transform:translateY(-2px)}
+.btn-borde{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-suave{background:#eef2e6;color:var(--verde)}
+.btn-coral{background:var(--coral);color:#fff}
+
+/* Cinta */
+.cinta{background:var(--amarillo);color:var(--verde);overflow:hidden;white-space:nowrap;font-weight:800;font-size:.9rem;padding:10px 0}
+.cinta .mov{display:inline-block;padding-left:100%;animation:cinta 48s linear infinite}
+.cinta span{margin-right:48px}
+@keyframes cinta{to{transform:translateX(-100%)}}
+
+section.bloque{padding:46px 0}
+.titulo{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.titulo h2{font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.1}
+.titulo p{color:var(--gris);max-width:560px}
+.kicker{color:var(--verde2);font-weight:800;text-transform:uppercase;font-size:.78rem;letter-spacing:.08em;display:block;margin-bottom:4px}
+
+.tarjeta{background:var(--blanco);border-radius:var(--radio);box-shadow:var(--sombra);padding:20px;border:1px solid var(--borde)}
+
+/* Hoy */
+.hoy-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+@media (max-width:760px){.hoy-grid{grid-template-columns:1fr}}
+.reloj{background:var(--verde);color:#fff;border-radius:var(--radio);padding:22px;position:relative;overflow:hidden}
+.reloj .hora{font-family:"Archivo Black";font-size:clamp(2.4rem,8vw,3.6rem);line-height:1;color:var(--lima)}
+.reloj .fecha{opacity:.9;margin-top:6px;text-transform:capitalize}
+.reloj .linea{display:flex;gap:20px;margin-top:18px;flex-wrap:wrap}
+.reloj .linea div small{display:block;opacity:.75;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.reloj .linea div b{font-family:"Archivo Black";font-size:1.4rem}
+.pulso{position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:rgba(198,244,50,.18);animation:pulso 3s ease-in-out infinite}
+@keyframes pulso{50%{transform:scale(1.25);opacity:.5}}
+.lista-hoy{display:flex;flex-direction:column;gap:8px;max-height:260px;overflow:auto}
+.vacio{color:var(--gris);font-size:.95rem;padding:10px 0}
+
+/* Formulario */
+.form-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.form-grid>*,.fila>*{min-width:0}
+@media (max-width:860px){.form-grid{grid-template-columns:1fr}.form-grid aside{order:-1}.calc{position:static}.calc .grande{font-size:2.3rem}}
+label.campo{display:block;margin-bottom:13px}
+label.campo span{display:block;font-weight:700;font-size:.88rem;margin-bottom:5px}
+input[type=text],input[type=number],input[type=date],select,textarea{width:100%;min-width:0;border:1.5px solid var(--borde);border-radius:12px;padding:12px 13px;background:#fdfdfb;font-size:1rem;color:var(--tinta)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--verde2);box-shadow:0 0 0 3px rgba(15,90,67,.15)}
+.fila{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pildoras{display:flex;flex-wrap:wrap;gap:8px}
+.pildoras button{border:1.5px solid var(--borde);background:#fff;border-radius:999px;padding:9px 14px;font-weight:700;cursor:pointer;font-size:.9rem}
+.pildoras button.on{background:var(--verde);border-color:var(--verde);color:#fff}
+.cedula{display:flex;gap:10px}
+.cedula button{flex:1;padding:12px;border-radius:12px;border:2px solid var(--borde);background:#fff;font-weight:800;cursor:pointer}
+.cedula button.si.on{background:var(--lima);border-color:#9fcb1c;color:var(--verde)}
+.cedula button.no.on{background:#ffe4e4;border-color:var(--coral);color:#a32020}
+.calc{background:var(--verde);color:#fff;border-radius:var(--radio);padding:22px;position:sticky;top:120px}
+.calc small{display:block;opacity:.8;text-transform:uppercase;font-size:.75rem;letter-spacing:.06em}
+.calc .grande{font-family:"Archivo Black";font-size:2.8rem;color:var(--lima);line-height:1.05;margin:6px 0 14px;transition:transform .2s}
+.calc .grande.salta{transform:scale(1.08)}
+.calc .desg{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.18);padding:9px 0;font-size:.95rem}
+.calc .aviso{margin-top:12px;background:rgba(255,210,63,.16);border-left:4px solid var(--amarillo);padding:10px 12px;border-radius:8px;font-size:.88rem}
+.foto-prev{margin-top:8px;max-width:100%;border-radius:12px;display:none}
+.ok-msg{display:none;margin-top:12px;background:var(--lima);color:var(--verde);font-weight:800;padding:12px;border-radius:12px;text-align:center}
+
+/* Compras */
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.filtros input,.filtros select{max-width:260px}
+.compra{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;background:#fff;border:1px solid var(--borde);border-radius:14px;padding:10px 12px;animation:entra .35s ease both}
+@keyframes entra{from{opacity:0;transform:translateY(8px)}}
+.compra .miniatura{width:64px;height:64px;border-radius:10px;background:#e9efe2 center/cover;display:flex;align-items:center;justify-content:center;font-family:"Archivo Black";color:var(--verde2);font-size:.8rem;text-align:center;line-height:1.1;cursor:pointer}
+.compra h4{font-size:1rem;line-height:1.2}
+.compra .meta{color:var(--gris);font-size:.82rem}
+.compra .der{text-align:right}
+.compra .iva{font-family:"Archivo Black";color:var(--verde2);font-size:1.1rem}
+.tag{display:inline-block;font-size:.7rem;font-weight:800;padding:2px 8px;border-radius:999px;margin-top:3px}
+.tag.si{background:#e9fbb8;color:#3d5a00}
+.tag.no{background:#ffe4e4;color:#a32020}
+.borrar{background:none;border:0;color:var(--gris);font-size:.78rem;text-decoration:underline;cursor:pointer;margin-top:3px}
+.lista{display:flex;flex-direction:column;gap:8px}
+.totales-filtro{margin-top:12px;font-weight:700;color:var(--verde2)}
+
+/* Resumen */
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.res-grid{grid-template-columns:1fr}}
+.barras{display:flex;align-items:flex-end;gap:10px;height:200px;padding-top:20px}
+.barra{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.barra .col{width:100%;max-width:54px;border-radius:10px 10px 4px 4px;background:linear-gradient(180deg,var(--lima),#7fb800);height:0;transition:height .9s cubic-bezier(.2,.8,.2,1);position:relative}
+.barra .col b{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:.7rem;white-space:nowrap;color:var(--verde)}
+.barra small{margin-top:6px;font-size:.75rem;color:var(--gris);text-transform:capitalize}
+.cat{margin-bottom:10px}
+.cat .t{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600}
+.cat .riel{height:10px;border-radius:99px;background:#eef2e6;overflow:hidden;margin-top:4px}
+.cat .riel i{display:block;height:100%;background:var(--verde2);border-radius:99px;width:0;transition:width .9s}
+.anillo{display:flex;align-items:center;gap:18px}
+.anillo .circ{width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.anillo .circ div{width:88px;height:88px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-family:"Archivo Black";font-size:1.4rem;color:var(--verde)}
+
+/* Simulador */
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.sim{grid-template-columns:1fr}}
+.foto-lado{border-radius:var(--radio);background:#0b3d2e center/cover;min-height:320px;position:relative;overflow:hidden}
+.foto-lado .pie{position:absolute;left:0;right:0;bottom:0;padding:18px;color:#fff;background:linear-gradient(0deg,rgba(11,61,46,.95),transparent)}
+.foto-lado .pie b{font-family:"Archivo Black";font-size:1.3rem;display:block}
+.grupos{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.grupos button{display:flex;justify-content:space-between;align-items:center;border:1.5px solid var(--borde);background:#fff;border-radius:12px;padding:12px 14px;cursor:pointer;font-weight:700;text-align:left}
+.grupos button b{font-family:"Archivo Black";color:var(--verde2)}
+.grupos button.on{border-color:var(--verde);background:#eaf6ee;box-shadow:inset 4px 0 0 var(--verde)}
+.resultado{background:var(--amarillo);border-radius:var(--radio);padding:18px;margin-top:6px}
+.resultado .num{font-size:2.3rem;color:var(--verde);line-height:1.05}
+.resultado small{font-weight:700;color:var(--verde)}
+.nota{font-size:.82rem;color:var(--gris);margin-top:10px}
+
+/* Lo que se sabe */
+.datos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.dato{background:#fff;border-radius:var(--radio);padding:18px;border:1px solid var(--borde);border-top:6px solid var(--lima);transition:transform .2s}
+.dato:hover{transform:translateY(-4px)}
+.dato .num{font-size:1.9rem;color:var(--verde2)}
+.dato p{font-size:.93rem;margin-top:4px}
+.fuente{font-size:.78rem;color:var(--gris);margin-top:8px}
+.pasos{counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.paso{background:var(--verde);color:#fff;border-radius:var(--radio);padding:18px;position:relative}
+.paso::before{counter-increment:p;content:counter(p);font-family:"Archivo Black";font-size:2.6rem;color:var(--lima);line-height:1;display:block;margin-bottom:6px}
+
+/* Noticias */
+.noticias{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.noti{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:14px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:transform .15s,box-shadow .15s;animation:entra .4s ease both}
+.noti:hover{transform:translateY(-3px);box-shadow:var(--sombra)}
+.noti b{font-size:.98rem;line-height:1.3}
+.noti small{color:var(--gris);font-size:.78rem}
+.noti .nueva{align-self:flex-start;background:var(--coral);color:#fff;font-size:.68rem;font-weight:800;padding:2px 8px;border-radius:99px;text-transform:uppercase}
+.estado-robot{font-size:.85rem;color:var(--gris)}
+
+/* Respaldo */
+.respaldo{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Razones con foto */
+.razones{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.razon{position:relative;min-height:260px;border-radius:var(--radio);overflow:hidden;background:#06261c;display:flex;align-items:flex-end}
+.razon img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+.razon:hover img{transform:scale(1.1)}
+.razon::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,38,28,.97) 15%,rgba(6,38,28,.55) 55%,rgba(6,38,28,.1))}
+.razon div{position:relative;z-index:2;padding:18px}
+.razon .n{font-family:"Archivo Black";color:var(--lima);font-size:2.4rem;line-height:1}
+.razon h3{font-size:1.2rem;margin:4px 0 6px}
+.razon p{font-size:.93rem;color:#e3f1ea}
+.razon .pie-foto{position:absolute;top:10px;right:10px;z-index:2;font-size:.66rem;background:rgba(0,0,0,.45);padding:2px 8px;border-radius:99px;color:#fff}
+/* Videos */
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.video{background:#16251f;border-radius:var(--radio);overflow:hidden;border:1px solid #24382f}
+.video .marco{position:relative;aspect-ratio:16/9;background:#000 center/cover;cursor:pointer}
+.video .marco::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--lima);box-shadow:0 0 0 0 rgba(198,244,50,.6);animation:latido 2s infinite;clip-path:circle(50%)}
+.video .marco::before{content:"";position:absolute;left:50%;top:50%;z-index:2;margin:-12px 0 0 -6px;border-left:20px solid var(--verde);border-top:12px solid transparent;border-bottom:12px solid transparent}
+@keyframes latido{70%{box-shadow:0 0 0 18px rgba(198,244,50,0)}}
+.video .marco.cargado::after,.video .marco.cargado::before{display:none}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video .info{padding:12px 14px}
+.video .info b{display:block;line-height:1.3}
+.video .info small{color:#9fb8ad}
+footer{background:var(--verde);color:#d9efe3;padding:34px 0 90px;font-size:.88rem}
+footer b{color:#fff}
+footer a{color:var(--lima)}
+
+.flotante{position:fixed;right:16px;bottom:18px;z-index:60;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal img{max-width:100%;max-height:90vh;border-radius:12px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(30px);background:var(--tinta);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;opacity:0;transition:.3s;z-index:120;pointer-events:none}
+.toast.ver{opacity:1;transform:translateX(-50%) translateY(0)}
+.oculto{display:none!important}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="marca">Mi IVA <b>Cuenta</b></div>
+    <button class="btn-top" id="btnActualizar" data-i18n="actualizar">Actualizar</button>
+    <button class="btn-top lima" id="btnIdioma">EN</button>
+  </div>
+  <nav class="tabs" id="tabs">
+    <a href="#hoy" data-i18n="nav_hoy">Hoy</a>
+    <a href="#anotar" data-i18n="nav_anotar">Anotar compra</a>
+    <a href="#compras" data-i18n="nav_compras">Mis compras</a>
+    <a href="#resumen" data-i18n="nav_resumen">Resumen</a>
+    <a href="#simulador" data-i18n="nav_sim">¿Cuánto me devuelven?</a>
+    <a href="#porque" data-i18n="nav_porque">Por qué llevarla</a>
+    <a href="#sabe" data-i18n="nav_sabe">Lo que se sabe</a>
+    <a href="#videos" data-i18n="nav_videos">Videos</a>
+    <a href="#noticias" data-i18n="nav_noticias">Noticias</a>
+    <a href="#respaldo" data-i18n="nav_respaldo">Respaldo</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="foto" id="heroFoto"></div>
+  <div class="wrap">
+    <span class="chip" data-i18n="hero_chip">Para el colombiano de a pie</span>
+    <h1 data-i18n-html="hero_h1">Cada compra cuenta. <em>Anote su IVA.</em></h1>
+    <p class="lead" data-i18n="hero_lead">Se habla de devolver el IVA a millones de colombianos con el mecanismo EfectIVA. Lleve desde ya la cuenta de cuánto IVA paga en el mercado, la droguería, la ropa y los servicios.</p>
+    <div class="marcadores">
+      <div class="marcador lima"><small data-i18n="m_mes">IVA pagado este mes</small><div class="num" id="mMes">$0</div></div>
+      <div class="marcador amar"><small data-i18n="m_anio">IVA pagado este año</small><div class="num" id="mAnio">$0</div></div>
+      <div class="marcador"><small data-i18n="m_ced">Con factura a su cédula</small><div class="num" id="mCed">0%</div></div>
+    </div>
+    <div class="cta">
+      <a href="#anotar" class="btn btn-lima" data-i18n="cta_anotar">Anotar una compra</a>
+      <a href="#simulador" class="btn btn-borde" data-i18n="cta_sim">¿Cuánto me podrían devolver?</a>
+    </div>
+  </div>
+</section>
+
+<div class="cinta"><div class="mov" id="cinta"></div></div>
+
+<main>
+<!-- HOY -->
+<section class="bloque" id="hoy">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="hoy_k">Hora de Colombia</span><h2 data-i18n="hoy_t">Hoy</h2></div>
+      <p data-i18n="hoy_p">Lo que lleva anotado hoy y lo último que se dice de la devolución del IVA.</p>
+    </div>
+    <div class="hoy-grid">
+      <div class="reloj">
+        <div class="pulso"></div>
+        <div class="hora" id="hora">--:--</div>
+        <div class="fecha" id="fecha"></div>
+        <div class="linea">
+          <div><small data-i18n="hoy_compras">Compras de hoy</small><b id="hoyN">0</b></div>
+          <div><small data-i18n="hoy_iva">IVA de hoy</small><b id="hoyIva">$0</b></div>
+          <div><small data-i18n="hoy_racha">Días seguidos anotando</small><b id="racha">0</b></div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <h3 style="font-size:1.1rem;margin-bottom:8px" data-i18n="hoy_ult">Lo último de EfectIVA</h3>
+        <div class="lista-hoy" id="hoyNoticias"><div class="vacio" data-i18n="cargando">Cargando…</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ -->
+<section class="bloque" id="porque" style="background:var(--verde);color:#fff">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" style="color:var(--lima)" data-i18n="pq_k">Llévela en el celular</span><h2 data-i18n="pq_t">¿Por qué llevar Mi IVA Cuenta?</h2></div>
+      <p style="color:#d9efe3" data-i18n="pq_p">Seis razones para empezar a anotar desde hoy, antes de que la devolución arranque.</p>
+    </div>
+    <div class="razones" id="razones"></div>
+  </div>
+</section>
+
+<!-- ANOTAR -->
+<section class="bloque" id="anotar" style="background:#fff">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="an_k">Toma 20 segundos</span><h2 data-i18n="an_t">Anotar compra</h2></div>
+      <p data-i18n="an_p">Escriba cuánto pagó y la app le calcula el IVA. Si la factura ya trae el IVA, escríbalo tal cual.</p>
+    </div>
+    <div class="form-grid">
+      <form id="form" class="tarjeta" autocomplete="off">
+        <div class="fila">
+          <label class="campo"><span data-i18n="f_fecha">Fecha</span><input type="date" id="fFecha" required></label>
+          <label class="campo"><span data-i18n="f_valor">Valor total pagado ($)</span><input type="number" id="fValor" inputmode="numeric" min="0" step="1" placeholder="85000" required></label>
+        </div>
+        <label class="campo"><span data-i18n="f_donde">¿Dónde compró?</span><input type="text" id="fDonde" list="comercios" data-i18n-ph="ph_donde" placeholder="Ej: Supermercado, droguería, almacén" required></label>
+        <datalist id="comercios"></datalist>
+        <label class="campo"><span data-i18n="f_que">¿Qué compró?</span><input type="text" id="fQue" data-i18n-ph="ph_que" placeholder="Ej: Mercado de la semana"></label>
+        <label class="campo"><span data-i18n="f_cat">Categoría</span><select id="fCat"></select></label>
+
+        <div class="campo" style="margin-bottom:13px"><span style="display:block;font-weight:700;font-size:.88rem;margin-bottom:5px" data-i18n="f_tarifa">Tarifa de IVA</span>
+          <div class="pildoras" id="tarifas">
+            <button type="button" data-t="19" class="on">19%</button>
+            <button type="button" data-t="5">5%</button>
+            <button type="button" data-t="0" data-i18n="t_0">0% / sin IVA</button>
+            <button type="button" data-t="manual" data-i18n="t_manual">La factura dice</button>
+          </div>
+        </div>
+        <label class="campo oculto" id="campoManual"><span data-i18n="f_ivamanual">Valor del IVA que aparece en la factura ($)</span><input type="number" id="fIvaManual" inputmode="numeric" min="0" step="1"></label>
+
+        <div class="campo" style="margin-bottom:13px"><span style="display:block;font-weight:700;font-size:.88rem;margin-bottom:5px" data-i18n="f_ced">¿Le dieron factura electrónica con su cédula?</span>
+          <div class="cedula">
+            <button type="button" class="si on" data-c="1" data-i18n="si">Sí</button>
+            <button type="button" class="no" data-c="0" data-i18n="no">No</button>
+          </div>
+        </div>
+        <label class="campo"><span data-i18n="f_num">Número de factura o CUFE (opcional)</span><input type="text" id="fNum" placeholder="FE-12345"></label>
+        <label class="campo"><span data-i18n="f_foto">Foto de la factura (opcional, queda solo en su celular)</span><input type="file" id="fFoto" accept="image/*" capture="environment"></label>
+        <img id="fotoPrev" class="foto-prev" alt="">
+        <button class="btn btn-verde" style="width:100%;margin-top:6px" type="submit" data-i18n="guardar">Guardar compra</button>
+        <div class="ok-msg" id="okMsg" data-i18n="guardado">Compra guardada. Siga anotando.</div>
+      </form>
+
+      <aside>
+        <div class="calc">
+          <small data-i18n="c_t">IVA de esta compra</small>
+          <div class="grande" id="cIva">$0</div>
+          <div class="desg"><span data-i18n="c_base">Valor sin IVA</span><b id="cBase">$0</b></div>
+          <div class="desg"><span data-i18n="c_total">Total pagado</span><b id="cTotal">$0</b></div>
+          <div class="desg"><span data-i18n="c_tarifa">Tarifa</span><b id="cTarifa">19%</b></div>
+          <div class="aviso" id="cAviso" data-i18n="c_aviso">Pida siempre la factura electrónica a nombre de su cédula: con EfectIVA, esa sería la forma de que la DIAN sepa cuánto IVA pagó usted.</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- COMPRAS -->
+<section class="bloque" id="compras">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="co_k">Su libreta</span><h2 data-i18n="co_t">Mis compras</h2></div>
+      <p data-i18n="co_p">Todo queda guardado en este celular. Nadie más lo ve.</p>
+    </div>
+    <div class="filtros">
+      <input type="text" id="buscar" data-i18n-ph="ph_buscar" placeholder="Buscar comercio o producto">
+      <select id="filtroMes"></select>
+      <select id="filtroCed">
+        <option value="" data-i18n="todas">Todas</option>
+        <option value="1" data-i18n="solo_ced">Solo con cédula</option>
+        <option value="0" data-i18n="sin_ced">Sin cédula</option>
+      </select>
+    </div>
+    <div class="lista" id="lista"></div>
+    <div class="totales-filtro" id="totFiltro"></div>
+  </div>
+</section>
+
+<!-- RESUMEN -->
+<section class="bloque" id="resumen" style="background:#fff">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="re_k">Sus números</span><h2 data-i18n="re_t">Resumen</h2></div>
+      <p data-i18n="re_p">Cuánto IVA ha pagado mes a mes y en qué se le va.</p>
+    </div>
+    <div class="res-grid">
+      <div class="tarjeta">
+        <h3 style="font-size:1.05rem" data-i18n="re_meses">IVA de los últimos 6 meses</h3>
+        <div class="barras" id="barras"></div>
+      </div>
+      <div class="tarjeta">
+        <h3 style="font-size:1.05rem;margin-bottom:12px" data-i18n="re_cats">IVA por categoría (este año)</h3>
+        <div id="cats"></div>
+      </div>
+      <div class="tarjeta">
+        <h3 style="font-size:1.05rem;margin-bottom:12px" data-i18n="re_ced">¿Cuánto de su IVA quedó a su nombre?</h3>
+        <div class="anillo"><div class="circ" id="anillo"><div id="anilloTxt">0%</div></div>
+          <p id="anilloP" style="font-size:.93rem"></p></div>
+      </div>
+      <div class="tarjeta">
+        <h3 style="font-size:1.05rem;margin-bottom:12px" data-i18n="re_top">Dónde paga más IVA</h3>
+        <div id="topComercios"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULADOR -->
+<section class="bloque" id="simulador">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="si_k">Simulador EfectIVA</span><h2 data-i18n="si_t">¿Cuánto me podrían devolver?</h2></div>
+      <p data-i18n="si_p">Un cálculo aproximado con lo que trae el proyecto de ley. Todavía no es ley: el Congreso puede cambiarlo.</p>
+    </div>
+    <div class="sim">
+      <div class="foto-lado" id="fotoSim">
+        <div class="pie"><b data-i18n="si_foto_t">El IVA está en todo lo que compramos</b><span data-i18n="si_foto_p">Desde el mercado hasta los útiles del colegio.</span></div>
+      </div>
+      <div class="tarjeta">
+        <label class="campo"><span data-i18n="si_mes">Mes a calcular</span><select id="simMes"></select></label>
+        <span style="font-weight:700;font-size:.88rem" data-i18n="si_grupo">Su hogar según el Sisbén (lo definirían el DNP y MinHacienda)</span>
+        <div class="grupos" id="grupos">
+          <button type="button" data-p="100" class="on"><span data-i18n="g1">Pobreza extrema y pobreza (deciles 1 a 3)</span><b>100%</b></button>
+          <button type="button" data-p="50"><span data-i18n="g4">Vulnerable (decil 4)</span><b>50%</b></button>
+          <button type="button" data-p="40"><span data-i18n="g5">Vulnerable (decil 5)</span><b>40%</b></button>
+          <button type="button" data-p="30"><span data-i18n="g6">Vulnerable (decil 6)</span><b>30%</b></button>
+          <button type="button" data-p="0"><span data-i18n="g7">Clase media o más (decil 7 en adelante)</span><b>0%</b></button>
+        </div>
+        <div class="resultado">
+          <small data-i18n="si_res">Devolución estimada de ese mes</small>
+          <div class="num" id="simRes">$0</div>
+          <div id="simDet" style="font-size:.88rem;color:var(--verde);margin-top:4px"></div>
+        </div>
+        <p class="nota" id="simNota"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LO QUE SE SABE -->
+<section class="bloque" id="sabe" style="background:#fff">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="sa_k">Proyecto de Ley 477 de 2026</span><h2 data-i18n="sa_t">Lo que se sabe de EfectIVA</h2></div>
+      <p data-i18n="sa_p">Datos del proyecto de Ley de Rescate Económico radicado el 29 de octubre de 2026. Puede cambiar en el Congreso.</p>
+    </div>
+    <div class="datos">
+      <div class="dato"><div class="num">35 M</div><p data-i18n="d1">colombianos se beneficiarían, según el Ministerio de Hacienda: unos 19 millones con devolución total y 16,5 millones con devolución parcial.</p><div class="fuente">Vanguardia, 30 oct 2026</div></div>
+      <div class="dato"><div class="num">100%</div><p data-i18n="d2">del IVA pagado se devolvería a hogares en pobreza extrema y pobreza. Para hogares vulnerables, 50%, 40% y 30%.</p><div class="fuente">Portafolio / Vanguardia</div></div>
+      <div class="dato"><div class="num">5,5 UVT</div><p data-i18n="d3">sería el tope mensual por persona, unos $288.000 con la UVT de 2026, ajustable cada año con el crecimiento del PIB.</p><div class="fuente">Portafolio / Vanguardia</div></div>
+      <div class="dato"><div class="num">2028</div><p data-i18n="d4">El mecanismo arrancaría el 1 de enero de 2028, con un primer giro anticipado a más tardar el 20 de diciembre de 2027.</p><div class="fuente">Vanguardia, 30 oct 2026</div></div>
+      <div class="dato"><div class="num">15 días</div><p data-i18n="d5">sería el plazo máximo entre pagos, que haría Prosperidad Social por cuenta bancaria o giro postal.</p><div class="fuente">Portafolio</div></div>
+      <div class="dato"><div class="num" data-i18n="d6n">Cédula</div><p data-i18n="d6">La DIAN calcularía su IVA con las facturas electrónicas expedidas a su número de cédula. Sin factura a su nombre, esa compra no se vería.</p><div class="fuente">Vanguardia, 30 oct 2026</div></div>
+      <div class="dato" style="border-top-color:var(--coral)"><div class="num">19%</div><p data-i18n="d7">El mismo proyecto propone cobrar IVA a productos que hoy no lo pagan, como el café, el azúcar, la pasta, las frutas y la sal. Por eso es más importante saber cuánto IVA paga.</p><div class="fuente">Noticieros, 29-30 oct 2026</div></div>
+    </div>
+    <h3 style="margin-top:34px;font-size:1.4rem" data-i18n="pasos_t">Qué hacer desde ya</h3>
+    <div class="pasos">
+      <div class="paso" data-i18n="p1">En cada compra diga: "factura electrónica a mi cédula, por favor".</div>
+      <div class="paso" data-i18n="p2">Revise que el número de cédula en la factura sea el suyo.</div>
+      <div class="paso" data-i18n="p3">Anote la compra aquí. En un mes ya sabrá cuánto IVA paga.</div>
+      <div class="paso" data-i18n="p4">Mantenga su Sisbén al día: el beneficio dependería de su clasificación.</div>
+    </div>
+    <p class="nota" data-i18n="sa_nota">Hoy sigue vigente la Devolución del IVA de Prosperidad Social para hogares vulnerables; según el Ministerio, quienes la reciben seguirían recibiéndola mientras se hace la transición al nuevo mecanismo.</p>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="bloque" id="videos" style="background:#0e1a15;color:#fff">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" style="color:var(--lima)" data-i18n="vi_k">Mírelo en video</span><h2 data-i18n="vi_t">Videos para entender el tema</h2></div>
+      <p style="color:#b9cfc4" data-i18n="vi_p">Noticieros y la DIAN explican la Ley de Rescate, el IVA y la factura con cédula. Toque un video para verlo aquí mismo.</p>
+    </div>
+    <div class="videos" id="listaVideos"></div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section class="bloque" id="noticias">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="no_k">Se actualiza sola</span><h2 data-i18n="no_t">Noticias de la devolución del IVA</h2></div>
+      <p class="estado-robot" id="estadoRobot"></p>
+    </div>
+    <div class="filtros"><input type="text" id="buscarNoti" data-i18n-ph="ph_noti" placeholder="Buscar en las noticias"></div>
+    <div class="noticias" id="listaNoticias"></div>
+  </div>
+</section>
+
+<!-- RESPALDO -->
+<section class="bloque" id="respaldo" style="background:#fff">
+  <div class="wrap">
+    <div class="titulo">
+      <div><span class="kicker" data-i18n="rs_k">No pierda sus datos</span><h2 data-i18n="rs_t">Respaldo</h2></div>
+      <p data-i18n="rs_p">Descargue su libreta en Excel (CSV) o guarde una copia para pasarla a otro celular.</p>
+    </div>
+    <div class="respaldo">
+      <button class="btn btn-verde" id="btnCsv" data-i18n="rs_csv">Descargar para Excel</button>
+      <button class="btn btn-suave" id="btnJson" data-i18n="rs_json">Guardar copia</button>
+      <label class="btn btn-suave" style="cursor:pointer"><span data-i18n="rs_imp">Cargar copia</span><input type="file" id="fImport" accept=".json,application/json" hidden></label>
+      <button class="btn btn-coral" id="btnBorrar" data-i18n="rs_borrar">Borrar todo</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Mi IVA Cuenta</b> · <span data-i18n="ft_1">una app de</span> <a href="https://vibraspositivashm.com" target="_blank" rel="noopener">Vibras Positivas HM</a> · Caucasia, Antioquia</p>
+    <p style="margin-top:8px" data-i18n="ft_2">Herramienta ciudadana e informativa. No es de la DIAN ni del Gobierno. Las cifras de EfectIVA son del proyecto de ley y pueden cambiar.</p>
+    <p style="margin-top:8px" data-i18n="ft_3">Fuentes: Vanguardia (30 oct 2026), Portafolio, Prosperidad Social.</p>
+    <p style="margin-top:8px;font-size:.78rem;opacity:.8">Fotos reales de Wikimedia Commons (CC BY-SA): Plaza de Paloquemao, Bogotá — Felipe Restrepo Acosta; Mercado Paloquemao; frutas en supermercado de Florencia, Caquetá — Mark Benecke; tiendas de barrio y Mercado de Bazurto, Cartagena; supermercado Éxito; Central de Abastos de Cúcuta. Videos: YouTube, de sus canales originales.</p>
+  </div>
+</footer>
+
+<a href="#anotar" class="btn btn-lima flotante" data-i18n="flot">Anotar compra</a>
+<div class="modal" id="modal"><img id="modalImg" alt=""></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ===== Configuración ===== */
+const UVT_2026 = 52374;           // UVT 2026 (3 UVT = $157.122)
+const TOPE_UVT = 5.5;             // tope mensual por persona en el proyecto EfectIVA
+const TZ = 'America/Bogota';
+const FOTO_HERO = 'https://commons.wikimedia.org/wiki/Special:FilePath/Bogot%C3%A1_plaza_de_Paloquemao.JPG?width=1600';
+const FOTO_SIM  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_Paloquemao.jpg?width=1000';
+const CLAVE = 'miIvaCuenta.compras.v1';
+
+const CATS = {
+  mercado:['Mercado y alimentos','Groceries & food'],
+  aseo:['Aseo y hogar','Cleaning & home'],
+  ropa:['Ropa y calzado','Clothing & shoes'],
+  drogueria:['Droguería y salud','Pharmacy & health'],
+  servicios:['Servicios (internet, celular, gas)','Utilities (internet, phone, gas)'],
+  restaurante:['Comidas fuera de casa','Eating out'],
+  transporte:['Transporte y gasolina','Transport & fuel'],
+  tecnologia:['Tecnología y electrodomésticos','Tech & appliances'],
+  colegio:['Colegio y útiles','School & supplies'],
+  otro:['Otro','Other']
+};
+
+const foto = (archivo, w=900) => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(archivo.replace(/ /g,'_')) + '?width=' + w;
+
+/* Razones para llevar la app (fotos reales) */
+const RAZONES = [
+  { img:'Bogotá plaza de Paloquemao.JPG', lugar:'Paloquemao, Bogotá',
+    es:['Se habla de devolverle el IVA','Con EfectIVA, la DIAN calcularía cuánto IVA pagó cada persona. Quien lleve la cuenta sabrá si le están devolviendo lo justo.'],
+    en:['A VAT refund is on the table','Under EfectIVA, the DIAN would calculate how much VAT each person paid. If you keep track, you will know whether your refund is fair.'] },
+  { img:'Mango in supermarket colombia mb.JPG', lugar:'Florencia, Caquetá',
+    es:['Viene más IVA en la canasta','El mismo proyecto propone IVA del 19% para café, azúcar, pasta, frutas y sal. Cada mercado tendría más IVA que contar.'],
+    en:['More VAT in the shopping basket','The same bill proposes 19% VAT on coffee, sugar, pasta, fruit and salt. Every grocery run would carry more VAT.'] },
+  { img:'Colombie ëxito inside.jpg', lugar:'Supermercado en Colombia',
+    es:['Casi nadie sabe cuánto IVA paga','El IVA se pierde en la tirilla. La app lo saca con solo escribir el valor de la compra y lo suma por mes y por año.'],
+    en:['Almost nobody knows how much VAT they pay','VAT gets lost on the receipt. The app works it out from the purchase total and adds it up by month and year.'] },
+  { img:'Small tiendas (shops), Cartagena, Colombia (24287799240).jpg', lugar:'Tiendas de barrio, Cartagena',
+    es:['La factura a su cédula es la llave','Sin factura electrónica a su nombre, la compra no contaría. La app le recuerda pedirla y le muestra qué parte de su IVA ya quedó a su nombre.'],
+    en:['An invoice under your ID is the key','Without an e-invoice in your name, the purchase would not count. The app reminds you to ask and shows how much of your VAT is already in your name.'] },
+  { img:'Mercado de Bazurto.jpg', lugar:'Mercado de Bazurto, Cartagena',
+    es:['Sus datos son suyos','No pide registro, ni cédula, ni contraseña. Todo queda guardado en su celular y lo puede pasar a Excel cuando quiera.'],
+    en:['Your data stays yours','No sign-up, no ID number, no password. Everything stays on your phone and you can export it to Excel anytime.'] },
+  { img:'Central de Abastos Cúcuta Colombia.JPG', lugar:'Central de Abastos, Cúcuta',
+    es:['Sirve para la casa y el negocio','Vea en qué se le va la plata, dónde paga más IVA y llegue preparado a 2028, cuando arrancaría la devolución.'],
+    en:['Useful at home and for business','See where your money goes, where you pay the most VAT, and be ready for 2028, when refunds would start.'] }
+];
+
+/* Videos reales (YouTube) */
+const VIDEOS = [
+  { id:'rOiPnSFj2cU', es:'Más IVA, menos renta para empresas y recorte del Estado: las claves de la ley fiscal', en:'More VAT, lower corporate tax and state cuts: key points of the fiscal bill', canal:'Noticiero' },
+  { id:'0bLtmUlwCho', es:'Así impactará el IVA a los alimentos con la Ley de Rescate Económico', en:'How the Economic Rescue bill would put VAT on food', canal:'Noticiero del Mediodía' },
+  { id:'XMzh8dfP_sQ', es:'Ley de Rescate Económico: café, azúcar, pasta y compras online tendrían IVA del 19%', en:'Economic Rescue bill: coffee, sugar, pasta and online shopping would pay 19% VAT', canal:'Noticias' },
+  { id:'VFYM_E9Tgtc', es:'Nuevo servicio gratuito de la DIAN para facturación electrónica con solo el número de cédula', en:'New free DIAN service: e-invoicing with just your ID number', canal:'DIAN' },
+  { id:'-oM5rCD_Sas', es:'Devolución del IVA: así funciona la compensación para los hogares en pobreza', en:'VAT refund: how the compensation for low-income households works', canal:'Gobierno de Colombia' }
+];
+
+/* ===== Textos ES / EN ===== */
+const T = {
+es:{actualizar:'Actualizar',nav_hoy:'Hoy',nav_anotar:'Anotar compra',nav_compras:'Mis compras',nav_resumen:'Resumen',nav_sim:'¿Cuánto me devuelven?',nav_sabe:'Lo que se sabe',nav_porque:'Por qué llevarla',nav_videos:'Videos',pq_k:'Llévela en el celular',pq_t:'¿Por qué llevar Mi IVA Cuenta?',pq_p:'Seis razones para empezar a anotar desde hoy, antes de que la devolución arranque.',vi_k:'Mírelo en video',vi_t:'Videos para entender el tema',vi_p:'Noticieros y la DIAN explican la Ley de Rescate, el IVA y la factura con cédula. Toque un video para verlo aquí mismo.',d7:'El mismo proyecto propone cobrar IVA a productos que hoy no lo pagan, como el café, el azúcar, la pasta, las frutas y la sal. Por eso es más importante saber cuánto IVA paga.',nav_noticias:'Noticias',nav_respaldo:'Respaldo',
+hero_chip:'Para el colombiano de a pie',hero_h1:'Cada compra cuenta. <em>Anote su IVA.</em>',hero_lead:'Se habla de devolver el IVA a millones de colombianos con el mecanismo EfectIVA. Lleve desde ya la cuenta de cuánto IVA paga en el mercado, la droguería, la ropa y los servicios.',
+m_mes:'IVA pagado este mes',m_anio:'IVA pagado este año',m_ced:'Con factura a su cédula',cta_anotar:'Anotar una compra',cta_sim:'¿Cuánto me podrían devolver?',
+hoy_k:'Hora de Colombia',hoy_t:'Hoy',hoy_p:'Lo que lleva anotado hoy y lo último que se dice de la devolución del IVA.',hoy_compras:'Compras de hoy',hoy_iva:'IVA de hoy',hoy_racha:'Días seguidos anotando',hoy_ult:'Lo último de EfectIVA',cargando:'Cargando…',
+an_k:'Toma 20 segundos',an_t:'Anotar compra',an_p:'Escriba cuánto pagó y la app le calcula el IVA. Si la factura ya trae el IVA, escríbalo tal cual.',
+f_fecha:'Fecha',f_valor:'Valor total pagado ($)',f_donde:'¿Dónde compró?',ph_donde:'Ej: Supermercado, droguería, almacén',f_que:'¿Qué compró?',ph_que:'Ej: Mercado de la semana',f_cat:'Categoría',f_tarifa:'Tarifa de IVA',t_0:'0% / sin IVA',t_manual:'La factura dice',f_ivamanual:'Valor del IVA que aparece en la factura ($)',f_ced:'¿Le dieron factura electrónica con su cédula?',si:'Sí',no:'No',f_num:'Número de factura o CUFE (opcional)',f_foto:'Foto de la factura (opcional, queda solo en su celular)',guardar:'Guardar compra',guardado:'Compra guardada. Siga anotando.',
+c_t:'IVA de esta compra',c_base:'Valor sin IVA',c_total:'Total pagado',c_tarifa:'Tarifa',c_aviso:'Pida siempre la factura electrónica a nombre de su cédula: con EfectIVA, esa sería la forma de que la DIAN sepa cuánto IVA pagó usted.',c_aviso_no:'Sin factura a su cédula, esta compra no contaría para la devolución. Igual la anotamos para que sepa cuánto IVA paga.',
+co_k:'Su libreta',co_t:'Mis compras',co_p:'Todo queda guardado en este celular. Nadie más lo ve.',ph_buscar:'Buscar comercio o producto',todas:'Todas',solo_ced:'Solo con cédula',sin_ced:'Sin cédula',todos_meses:'Todos los meses',con_ced:'Con cédula',sin_ced_tag:'Sin cédula',borrar:'Borrar',sin_compras:'Todavía no hay compras anotadas. Anote la primera arriba.',tot_filtro:'{n} compras · IVA {iva} · Total {tot}',
+re_k:'Sus números',re_t:'Resumen',re_p:'Cuánto IVA ha pagado mes a mes y en qué se le va.',re_meses:'IVA de los últimos 6 meses',re_cats:'IVA por categoría (este año)',re_ced:'¿Cuánto de su IVA quedó a su nombre?',re_top:'Dónde paga más IVA',anillo_p:'De {tot} de IVA este año, {ced} quedaron en facturas a su cédula. Esa es la parte que la DIAN podría ver.',sin_datos:'Sin datos todavía.',
+si_k:'Simulador EfectIVA',si_t:'¿Cuánto me podrían devolver?',si_p:'Un cálculo aproximado con lo que trae el proyecto de ley. Todavía no es ley: el Congreso puede cambiarlo.',si_foto_t:'El IVA está en todo lo que compramos',si_foto_p:'Desde el mercado hasta los útiles del colegio.',si_mes:'Mes a calcular',si_grupo:'Su hogar según el Sisbén (lo definirían el DNP y MinHacienda)',
+g1:'Pobreza extrema y pobreza (deciles 1 a 3)',g4:'Vulnerable (decil 4)',g5:'Vulnerable (decil 5)',g6:'Vulnerable (decil 6)',g7:'Clase media o más (decil 7 en adelante)',si_res:'Devolución estimada de ese mes',
+sim_det:'IVA con cédula: {ced} × {p}% = {calc}',sim_tope:' · se aplica el tope de {tope}',sim_nota:'Tope usado: 5,5 UVT = {tope} al mes (UVT 2026 de $52.374). Solo cuentan las compras con factura a su cédula. El valor real dependerá de lo que apruebe el Congreso y de la UVT de 2028.',
+sa_k:'Proyecto de Ley 477 de 2026',sa_t:'Lo que se sabe de EfectIVA',sa_p:'Datos del proyecto de Ley de Rescate Económico radicado el 29 de octubre de 2026. Puede cambiar en el Congreso.',
+d1:'colombianos se beneficiarían, según el Ministerio de Hacienda: unos 19 millones con devolución total y 16,5 millones con devolución parcial.',d2:'del IVA pagado se devolvería a hogares en pobreza extrema y pobreza. Para hogares vulnerables, 50%, 40% y 30%.',d3:'sería el tope mensual por persona, unos $288.000 con la UVT de 2026, ajustable cada año con el crecimiento del PIB.',d4:'El mecanismo arrancaría el 1 de enero de 2028, con un primer giro anticipado a más tardar el 20 de diciembre de 2027.',d5:'sería el plazo máximo entre pagos, que haría Prosperidad Social por cuenta bancaria o giro postal.',d6n:'Cédula',d6:'La DIAN calcularía su IVA con las facturas electrónicas expedidas a su número de cédula. Sin factura a su nombre, esa compra no se vería.',
+pasos_t:'Qué hacer desde ya',p1:'En cada compra diga: "factura electrónica a mi cédula, por favor".',p2:'Revise que el número de cédula en la factura sea el suyo.',p3:'Anote la compra aquí. En un mes ya sabrá cuánto IVA paga.',p4:'Mantenga su Sisbén al día: el beneficio dependería de su clasificación.',
+sa_nota:'Hoy sigue vigente la Devolución del IVA de Prosperidad Social para hogares vulnerables; según el Ministerio, quienes la reciben seguirían recibiéndola mientras se hace la transición al nuevo mecanismo.',
+no_k:'Se actualiza sola',no_t:'Noticias de la devolución del IVA',ph_noti:'Buscar en las noticias',robot:'Robot de noticias: última revisión {f}',robot_no:'Las noticias se cargan cuando la app está publicada.',nueva:'Nueva',sin_noti:'No hay noticias que coincidan.',
+rs_k:'No pierda sus datos',rs_t:'Respaldo',rs_p:'Descargue su libreta en Excel (CSV) o guarde una copia para pasarla a otro celular.',rs_csv:'Descargar para Excel',rs_json:'Guardar copia',rs_imp:'Cargar copia',rs_borrar:'Borrar todo',
+conf_borrar:'¿Seguro que quiere borrar TODAS sus compras? No se puede deshacer.',conf_una:'¿Borrar esta compra?',imp_ok:'Se cargaron {n} compras.',imp_mal:'Ese archivo no es una copia de Mi IVA Cuenta.',act_ok:'Actualizado',
+ft_1:'una app de',ft_2:'Herramienta ciudadana e informativa. No es de la DIAN ni del Gobierno. Las cifras de EfectIVA son del proyecto de ley y pueden cambiar.',ft_3:'Fuentes: Vanguardia (30 oct 2026), Portafolio, Prosperidad Social.',flot:'Anotar compra',
+cinta:['Pida factura electrónica a su cédula','EfectIVA: devolución de hasta 5,5 UVT al mes por persona','100% del IVA para hogares en pobreza','Arrancaría el 1 de enero de 2028','Proyecto de Ley 477 de 2026, aún en el Congreso','Anote cada compra: cada peso cuenta']},
+en:{actualizar:'Refresh',nav_hoy:'Today',nav_anotar:'Add purchase',nav_compras:'My purchases',nav_resumen:'Summary',nav_sim:'How much back?',nav_sabe:'What we know',nav_porque:'Why use it',nav_videos:'Videos',pq_k:'Carry it on your phone',pq_t:'Why use Mi IVA Cuenta?',pq_p:'Six reasons to start logging today, before refunds begin.',vi_k:'Watch it',vi_t:'Videos to understand the topic',vi_p:'News programs and the DIAN explain the Rescue bill, VAT and invoices under your ID. Tap a video to watch it right here.',d7:'The same bill proposes VAT on products that are exempt today, such as coffee, sugar, pasta, fruit and salt. That makes knowing how much VAT you pay even more important.',nav_noticias:'News',nav_respaldo:'Backup',
+hero_chip:'For everyday Colombians',hero_h1:'Every purchase counts. <em>Track your VAT.</em>',hero_lead:'Colombia is discussing refunding VAT (IVA) to millions of people through a mechanism called EfectIVA. Start tracking how much VAT you pay on groceries, pharmacy, clothes and utilities.',
+m_mes:'VAT paid this month',m_anio:'VAT paid this year',m_ced:'Invoiced to your ID',cta_anotar:'Add a purchase',cta_sim:'How much could I get back?',
+hoy_k:'Colombia time',hoy_t:'Today',hoy_p:'What you logged today and the latest on the VAT refund.',hoy_compras:'Purchases today',hoy_iva:'VAT today',hoy_racha:'Day streak',hoy_ult:'Latest on EfectIVA',cargando:'Loading…',
+an_k:'Takes 20 seconds',an_t:'Add purchase',an_p:'Enter what you paid and the app works out the VAT. If the invoice already shows the VAT, type it in.',
+f_fecha:'Date',f_valor:'Total paid ($)',f_donde:'Where did you buy?',ph_donde:'E.g. supermarket, pharmacy, store',f_que:'What did you buy?',ph_que:'E.g. weekly groceries',f_cat:'Category',f_tarifa:'VAT rate',t_0:'0% / no VAT',t_manual:'Invoice says',f_ivamanual:'VAT amount shown on the invoice ($)',f_ced:'Did you get an e-invoice with your ID number?',si:'Yes',no:'No',f_num:'Invoice number or CUFE (optional)',f_foto:'Invoice photo (optional, stays on your phone)',guardar:'Save purchase',guardado:'Purchase saved. Keep going.',
+c_t:'VAT on this purchase',c_base:'Price before VAT',c_total:'Total paid',c_tarifa:'Rate',c_aviso:'Always ask for an e-invoice under your ID number: under EfectIVA, that is how the DIAN would know how much VAT you paid.',c_aviso_no:'Without an invoice under your ID, this purchase would not count toward the refund. We still log it so you know how much VAT you pay.',
+co_k:'Your logbook',co_t:'My purchases',co_p:'Everything is stored on this phone only. Nobody else sees it.',ph_buscar:'Search store or item',todas:'All',solo_ced:'With ID only',sin_ced:'Without ID',todos_meses:'All months',con_ced:'With ID',sin_ced_tag:'No ID',borrar:'Delete',sin_compras:'No purchases yet. Add your first one above.',tot_filtro:'{n} purchases · VAT {iva} · Total {tot}',
+re_k:'Your numbers',re_t:'Summary',re_p:'How much VAT you paid each month and where it goes.',re_meses:'VAT over the last 6 months',re_cats:'VAT by category (this year)',re_ced:'How much of your VAT is under your name?',re_top:'Where you pay the most VAT',anillo_p:'Of {tot} in VAT this year, {ced} was on invoices under your ID. That is the part the DIAN could see.',sin_datos:'No data yet.',
+si_k:'EfectIVA calculator',si_t:'How much could I get back?',si_p:'A rough estimate based on the bill. It is not law yet: Congress may change it.',si_foto_t:'VAT is in everything we buy',si_foto_p:'From groceries to school supplies.',si_mes:'Month',si_grupo:'Your household per Sisbén (to be defined by DNP and the Finance Ministry)',
+g1:'Extreme poverty and poverty (deciles 1–3)',g4:'Vulnerable (decile 4)',g5:'Vulnerable (decile 5)',g6:'Vulnerable (decile 6)',g7:'Middle class or above (decile 7+)',si_res:'Estimated refund for that month',
+sim_det:'VAT with ID: {ced} × {p}% = {calc}',sim_tope:' · capped at {tope}',sim_nota:'Cap used: 5.5 UVT = {tope} per month (2026 UVT of $52,374). Only purchases invoiced to your ID count. The real amount depends on what Congress approves and on the 2028 UVT.',
+sa_k:'Bill 477 of 2026',sa_t:'What we know about EfectIVA',sa_p:'Figures from the Economic Rescue bill filed on October 29, 2026. Congress may change them.',
+d1:'Colombians would benefit, according to the Finance Ministry: about 19 million with a full refund and 16.5 million with a partial one.',d2:'of VAT paid would go back to households in extreme poverty and poverty. Vulnerable households would get 50%, 40% and 30%.',d3:'would be the monthly cap per person, about $288,000 at 2026 UVT, adjusted yearly with GDP growth.',d4:'The mechanism would start on January 1, 2028, with a first advance payment no later than December 20, 2027.',d5:'would be the maximum time between payments, made by Prosperidad Social to a bank account or postal money order.',d6n:'ID',d6:'The DIAN would calculate your VAT from e-invoices issued under your ID number. Without an invoice in your name, that purchase would not show up.',
+pasos_t:'What to do now',p1:'At every purchase say: "e-invoice under my ID, please".',p2:'Check that the ID number on the invoice is yours.',p3:'Log the purchase here. In a month you will know how much VAT you pay.',p4:'Keep your Sisbén up to date: the benefit would depend on your classification.',
+sa_nota:'The current Prosperidad Social VAT Refund for vulnerable households is still in place; according to the Ministry, current recipients would keep receiving it during the transition.',
+no_k:'Updates itself',no_t:'VAT refund news',ph_noti:'Search the news',robot:'News robot: last check {f}',robot_no:'News loads once the app is published.',nueva:'New',sin_noti:'No matching news.',
+rs_k:'Keep your data safe',rs_t:'Backup',rs_p:'Download your logbook for Excel (CSV) or save a copy to move to another phone.',rs_csv:'Download for Excel',rs_json:'Save copy',rs_imp:'Load copy',rs_borrar:'Delete all',
+conf_borrar:'Delete ALL your purchases? This cannot be undone.',conf_una:'Delete this purchase?',imp_ok:'Loaded {n} purchases.',imp_mal:'That file is not a Mi IVA Cuenta backup.',act_ok:'Refreshed',
+ft_1:'an app by',ft_2:'Civic, informational tool. Not affiliated with the DIAN or the Government. EfectIVA figures come from the bill and may change.',ft_3:'Sources: Vanguardia (Oct 30, 2026), Portafolio, Prosperidad Social.',flot:'Add purchase',
+cinta:['Ask for an e-invoice under your ID','EfectIVA: refunds up to 5.5 UVT per person per month','100% of VAT back for households in poverty','Would start January 1, 2028','Bill 477 of 2026, still in Congress','Log every purchase: every peso counts']}
+};
+let idioma = localStorage.getItem('miIvaCuenta.idioma') || 'es';
+const t = (k, v={}) => { let s = (T[idioma][k] ?? T.es[k] ?? k); if(typeof s==='string') for(const x in v) s = s.replace('{'+x+'}', v[x]); return s; };
+
+/* ===== Utilidades ===== */
+const $ = s => document.querySelector(s);
+const pesos = n => new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(Math.round(n||0));
+const hoyBog = () => new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const mesDe = f => f.slice(0,7);
+const nombreMes = (ym, corto) => { const [y,m]=ym.split('-').map(Number); return new Date(Date.UTC(y,m-1,15)).toLocaleDateString(idioma==='es'?'es-CO':'en-US',{month:corto?'short':'long',year:corto?undefined:'numeric',timeZone:'UTC'}); };
+const esc = s => String(s??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(msg){ const el=$('#toast'); el.textContent=msg; el.classList.add('ver'); clearTimeout(toast._t); toast._t=setTimeout(()=>el.classList.remove('ver'),2200); }
+function cargar(){ try{ return JSON.parse(localStorage.getItem(CLAVE))||[] }catch(e){ return [] } }
+function guardarTodo(){ try{ localStorage.setItem(CLAVE, JSON.stringify(compras)) }catch(e){ alert('No hay espacio para guardar.'); } }
+let compras = cargar();
+
+/* Contador animado */
+function animar(el, valor, formato){
+  const desde = Number(el.dataset.v||0); el.dataset.v = valor;
+  const ini = performance.now(), dur = 900;
+  const paso = ahora => { const p=Math.min(1,(ahora-ini)/dur), e=1-Math.pow(1-p,3); el.textContent = formato(desde+(valor-desde)*e); if(p<1) requestAnimationFrame(paso); };
+  requestAnimationFrame(paso);
+}
+
+/* ===== Fotos de facturas (IndexedDB) ===== */
+const DB = { db:null,
+  abrir(){ return new Promise((ok,mal)=>{ if(this.db) return ok(this.db); const r=indexedDB.open('miIvaCuentaFotos',1); r.onupgradeneeded=()=>r.result.createObjectStore('fotos'); r.onsuccess=()=>{this.db=r.result;ok(this.db)}; r.onerror=()=>mal(r.error); }); },
+  async poner(id,data){ const db=await this.abrir(); return new Promise(ok=>{ const tx=db.transaction('fotos','readwrite'); tx.objectStore('fotos').put(data,id); tx.oncomplete=ok; }); },
+  async traer(id){ const db=await this.abrir(); return new Promise(ok=>{ const r=db.transaction('fotos').objectStore('fotos').get(id); r.onsuccess=()=>ok(r.result); r.onerror=()=>ok(null); }); },
+  async quitar(id){ const db=await this.abrir(); return new Promise(ok=>{ const tx=db.transaction('fotos','readwrite'); tx.objectStore('fotos').delete(id); tx.oncomplete=ok; }); },
+  async limpiar(){ const db=await this.abrir(); return new Promise(ok=>{ const tx=db.transaction('fotos','readwrite'); tx.objectStore('fotos').clear(); tx.oncomplete=ok; }); }
+};
+function comprimir(file){ return new Promise((ok,mal)=>{ const img=new Image(); const url=URL.createObjectURL(file);
+  img.onload=()=>{ const max=1100, k=Math.min(1,max/Math.max(img.width,img.height)); const c=document.createElement('canvas'); c.width=img.width*k; c.height=img.height*k; c.getContext('2d').drawImage(img,0,0,c.width,c.height); URL.revokeObjectURL(url); ok(c.toDataURL('image/jpeg',.65)); };
+  img.onerror=mal; img.src=url; }); }
+
+/* ===== Formulario ===== */
+let tarifa = '19', conCedula = true, fotoData = null;
+function calcular(){
+  const total = Number($('#fValor').value)||0;
+  let iva, base;
+  if(tarifa==='manual'){ iva = Math.min(total, Number($('#fIvaManual').value)||0); base = total-iva; }
+  else { const r=Number(tarifa)/100; base = total/(1+r); iva = total-base; }
+  return {total, iva:Math.round(iva), base:Math.round(base)};
+}
+function pintarCalc(){
+  const c = calcular(); const g=$('#cIva');
+  if(g.dataset.last!=String(c.iva)){ g.classList.add('salta'); setTimeout(()=>g.classList.remove('salta'),180); g.dataset.last=c.iva; }
+  g.textContent = pesos(c.iva); $('#cBase').textContent = pesos(c.base); $('#cTotal').textContent = pesos(c.total);
+  $('#cTarifa').textContent = tarifa==='manual' ? t('t_manual') : tarifa+'%';
+  $('#cAviso').textContent = conCedula ? t('c_aviso') : t('c_aviso_no');
+}
+document.querySelectorAll('#tarifas button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#tarifas button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); tarifa=b.dataset.t;
+  $('#campoManual').classList.toggle('oculto', tarifa!=='manual'); pintarCalc(); });
+document.querySelectorAll('.cedula button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.cedula button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); conCedula = b.dataset.c==='1'; pintarCalc(); });
+['#fValor','#fIvaManual'].forEach(s=>$(s).addEventListener('input',pintarCalc));
+$('#fFoto').onchange = async e => { const f=e.target.files[0]; if(!f){fotoData=null;$('#fotoPrev').style.display='none';return;} fotoData = await comprimir(f); $('#fotoPrev').src=fotoData; $('#fotoPrev').style.display='block'; };
+
+$('#form').onsubmit = async e => {
+  e.preventDefault();
+  const c = calcular(); if(c.total<=0) return;
+  const id = Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  const reg = { id, fecha:$('#fFecha').value||hoyBog(), donde:$('#fDonde').value.trim(), que:$('#fQue').value.trim(), cat:$('#fCat').value,
+    total:c.total, iva:c.iva, tarifa, cedula:conCedula, num:$('#fNum').value.trim(), foto:!!fotoData, creado:new Date().toISOString() };
+  if(fotoData) await DB.poner(id, fotoData);
+  compras.push(reg); guardarTodo();
+  const fecha = $('#fFecha').value;
+  $('#form').reset(); $('#fFecha').value = fecha; fotoData=null; $('#fotoPrev').style.display='none';
+  const ok=$('#okMsg'); ok.style.display='block'; setTimeout(()=>ok.style.display='none',2500);
+  pintarCalc(); refrescar();
+};
+
+/* ===== Listado ===== */
+function filtradas(){
+  const q = $('#buscar').value.toLowerCase().trim(), m = $('#filtroMes').value, ced = $('#filtroCed').value;
+  return compras.filter(c => (!q || (c.donde+' '+c.que).toLowerCase().includes(q)) && (!m || mesDe(c.fecha)===m) && (ced==='' || String(+c.cedula)===ced))
+    .sort((a,b)=> b.fecha.localeCompare(a.fecha) || b.creado.localeCompare(a.creado));
+}
+function itemHTML(c){
+  const fecha = new Date(c.fecha+'T12:00:00').toLocaleDateString(idioma==='es'?'es-CO':'en-US',{day:'numeric',month:'short'});
+  return `<div class="compra" data-id="${c.id}">
+    <div class="miniatura" data-foto="${c.foto?c.id:''}">${c.foto?'':esc((CATS[c.cat]||CATS.otro)[idioma==='es'?0:1].split(' ')[0])}</div>
+    <div><h4>${esc(c.donde)}</h4><div class="meta">${fecha} · ${esc(c.que|| (CATS[c.cat]||CATS.otro)[idioma==='es'?0:1])} · ${pesos(c.total)}</div>
+      <span class="tag ${c.cedula?'si':'no'}">${c.cedula?t('con_ced'):t('sin_ced_tag')}</span></div>
+    <div class="der"><div class="iva">${pesos(c.iva)}</div><div class="meta">${c.tarifa==='manual'?'IVA':c.tarifa+'%'}</div><button class="borrar" data-borrar="${c.id}">${t('borrar')}</button></div>
+  </div>`;
+}
+async function pintarLista(){
+  const l = filtradas();
+  $('#lista').innerHTML = l.length ? l.map(itemHTML).join('') : `<div class="vacio">${t('sin_compras')}</div>`;
+  const iva = l.reduce((s,c)=>s+c.iva,0), tot = l.reduce((s,c)=>s+c.total,0);
+  $('#totFiltro').textContent = l.length ? t('tot_filtro',{n:l.length,iva:pesos(iva),tot:pesos(tot)}) : '';
+  for(const el of document.querySelectorAll('#lista .miniatura[data-foto]:not([data-foto=""])')){ const d=await DB.traer(el.dataset.foto); if(d) el.style.backgroundImage=`url(${d})`; }
+}
+$('#lista').onclick = async e => {
+  const b = e.target.closest('[data-borrar]');
+  if(b){ if(!confirm(t('conf_una'))) return; const id=b.dataset.borrar; compras = compras.filter(c=>c.id!==id); guardarTodo(); DB.quitar(id); refrescar(); return; }
+  const m = e.target.closest('.miniatura'); if(m && m.dataset.foto){ const d=await DB.traer(m.dataset.foto); if(d){ $('#modalImg').src=d; $('#modal').style.display='flex'; } }
+};
+$('#modal').onclick = ()=> $('#modal').style.display='none';
+['#buscar','#filtroMes','#filtroCed'].forEach(s=>$(s).addEventListener('input',pintarLista));
+
+/* ===== Totales, Hoy, Resumen ===== */
+function mesesUsados(){ const s=new Set(compras.map(c=>mesDe(c.fecha))); s.add(mesDe(hoyBog())); return [...s].sort().reverse(); }
+function pintarSelects(){
+  const meses = mesesUsados();
+  const fm=$('#filtroMes'), v1=fm.value; fm.innerHTML = `<option value="">${t('todos_meses')}</option>`+meses.map(m=>`<option value="${m}">${nombreMes(m)}</option>`).join(''); fm.value=v1;
+  const sm=$('#simMes'), v2=sm.value; sm.innerHTML = meses.map(m=>`<option value="${m}">${nombreMes(m)}</option>`).join(''); sm.value = v2 && meses.includes(v2) ? v2 : meses[0];
+  const cat=$('#fCat'), v3=cat.value; cat.innerHTML = Object.entries(CATS).map(([k,v])=>`<option value="${k}">${v[idioma==='es'?0:1]}</option>`).join(''); cat.value = v3||'mercado';
+  $('#comercios').innerHTML = [...new Set(compras.map(c=>c.donde))].slice(-40).map(d=>`<option value="${esc(d)}">`).join('');
+}
+function racha(){
+  const dias = new Set(compras.map(c=>c.fecha)); let n=0; const d=new Date(hoyBog()+'T12:00:00');
+  if(!dias.has(hoyBog())) d.setDate(d.getDate()-1);
+  while(dias.has(d.toISOString().slice(0,10))){ n++; d.setDate(d.getDate()-1); }
+  return n;
+}
+function pintarTotales(){
+  const hoy=hoyBog(), mes=mesDe(hoy), anio=hoy.slice(0,4);
+  const delMes = compras.filter(c=>mesDe(c.fecha)===mes), delAnio = compras.filter(c=>c.fecha.startsWith(anio));
+  const ivaAnio = delAnio.reduce((s,c)=>s+c.iva,0), ivaCed = delAnio.filter(c=>c.cedula).reduce((s,c)=>s+c.iva,0);
+  const pct = ivaAnio ? Math.round(ivaCed/ivaAnio*100) : 0;
+  animar($('#mMes'), delMes.reduce((s,c)=>s+c.iva,0), pesos);
+  animar($('#mAnio'), ivaAnio, pesos);
+  animar($('#mCed'), pct, v=>Math.round(v)+'%');
+  const deHoy = compras.filter(c=>c.fecha===hoy);
+  animar($('#hoyN'), deHoy.length, v=>Math.round(v));
+  animar($('#hoyIva'), deHoy.reduce((s,c)=>s+c.iva,0), pesos);
+  animar($('#racha'), racha(), v=>Math.round(v));
+  // anillo
+  $('#anillo').style.background = `conic-gradient(var(--lima) ${pct*3.6}deg, #eef2e6 0)`;
+  $('#anilloTxt').textContent = pct+'%';
+  $('#anilloP').textContent = ivaAnio ? t('anillo_p',{tot:pesos(ivaAnio),ced:pesos(ivaCed)}) : t('sin_datos');
+  // barras 6 meses
+  const ms=[]; const [y,m]=mes.split('-').map(Number);
+  for(let i=5;i>=0;i--){ const d=new Date(Date.UTC(y,m-1-i,1)); ms.push(d.toISOString().slice(0,7)); }
+  const vals = ms.map(k=>compras.filter(c=>mesDe(c.fecha)===k).reduce((s,c)=>s+c.iva,0)); const mx=Math.max(1,...vals);
+  $('#barras').innerHTML = ms.map((k,i)=>`<div class="barra"><div class="col" data-h="${Math.max(2,vals[i]/mx*100)}"><b>${vals[i]?pesos(vals[i]).replace(/\s/g,''):''}</b></div><small>${nombreMes(k,true)}</small></div>`).join('');
+  requestAnimationFrame(()=>document.querySelectorAll('#barras .col').forEach(c=>c.style.height=c.dataset.h+'%'));
+  // categorías
+  const porCat={}; delAnio.forEach(c=>porCat[c.cat]=(porCat[c.cat]||0)+c.iva);
+  const cs = Object.entries(porCat).sort((a,b)=>b[1]-a[1]); const mc = Math.max(1,...cs.map(x=>x[1]));
+  $('#cats').innerHTML = cs.length ? cs.map(([k,v])=>`<div class="cat"><div class="t"><span>${(CATS[k]||CATS.otro)[idioma==='es'?0:1]}</span><span>${pesos(v)}</span></div><div class="riel"><i data-w="${v/mc*100}"></i></div></div>`).join('') : `<div class="vacio">${t('sin_datos')}</div>`;
+  requestAnimationFrame(()=>document.querySelectorAll('#cats i').forEach(i=>i.style.width=i.dataset.w+'%'));
+  // top comercios
+  const porCom={}; delAnio.forEach(c=>porCom[c.donde]=(porCom[c.donde]||0)+c.iva);
+  const tc = Object.entries(porCom).sort((a,b)=>b[1]-a[1]).slice(0,5); const mt=Math.max(1,...tc.map(x=>x[1]));
+  $('#topComercios').innerHTML = tc.length ? tc.map(([k,v])=>`<div class="cat"><div class="t"><span>${esc(k)}</span><span>${pesos(v)}</span></div><div class="riel"><i data-w="${v/mt*100}" style="background:var(--amarillo)"></i></div></div>`).join('') : `<div class="vacio">${t('sin_datos')}</div>`;
+  requestAnimationFrame(()=>document.querySelectorAll('#topComercios i').forEach(i=>i.style.width=i.dataset.w+'%'));
+}
+
+/* ===== Simulador ===== */
+let pctGrupo = Number(localStorage.getItem('miIvaCuenta.grupo') ?? 100);
+document.querySelectorAll('#grupos button').forEach(b=>{ b.classList.toggle('on', Number(b.dataset.p)===pctGrupo);
+  b.onclick=()=>{ pctGrupo=Number(b.dataset.p); localStorage.setItem('miIvaCuenta.grupo',pctGrupo); document.querySelectorAll('#grupos button').forEach(x=>x.classList.toggle('on',x===b)); pintarSim(); }; });
+$('#simMes').addEventListener('input', pintarSim);
+function pintarSim(){
+  const m = $('#simMes').value || mesDe(hoyBog()); const tope = TOPE_UVT*UVT_2026;
+  const ced = compras.filter(c=>mesDe(c.fecha)===m && c.cedula).reduce((s,c)=>s+c.iva,0);
+  const calc = ced*pctGrupo/100, res = Math.min(calc, tope);
+  animar($('#simRes'), res, pesos);
+  $('#simDet').textContent = t('sim_det',{ced:pesos(ced),p:pctGrupo,calc:pesos(calc)}) + (calc>tope ? t('sim_tope',{tope:pesos(tope)}) : '');
+  $('#simNota').textContent = t('sim_nota',{tope:pesos(tope)});
+}
+
+/* ===== Noticias (robot) ===== */
+let noticias = [], robotFecha = null;
+async function cargarNoticias(){
+  try{
+    const r = await fetch('noticias.json?v='+Date.now(), {cache:'no-store'}); if(!r.ok) throw 0;
+    const d = await r.json(); noticias = d.noticias||[]; robotFecha = d.actualizado;
+  }catch(e){ noticias = noticias||[]; }
+  pintarNoticias();
+}
+function fechaNoti(s){ const d=new Date(s); if(isNaN(d)) return ''; return d.toLocaleString(idioma==='es'?'es-CO':'en-US',{timeZone:TZ,day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}); }
+function pintarNoticias(){
+  const q = $('#buscarNoti').value.toLowerCase().trim();
+  const l = noticias.filter(n=>!q || (n.titulo+' '+n.fuente).toLowerCase().includes(q));
+  const reciente = n => Date.now()-new Date(n.fecha).getTime() < 36*3600e3;
+  const tarjeta = n => `<a class="noti" href="${esc(n.url)}" target="_blank" rel="noopener">${reciente(n)?`<span class="nueva">${t('nueva')}</span>`:''}<b>${esc(n.titulo)}</b><small>${esc(n.fuente||'')} · ${fechaNoti(n.fecha)}</small></a>`;
+  $('#listaNoticias').innerHTML = l.length ? l.map(tarjeta).join('') : `<div class="vacio">${noticias.length?t('sin_noti'):t('robot_no')}</div>`;
+  $('#hoyNoticias').innerHTML = noticias.length ? noticias.slice(0,5).map(tarjeta).join('') : `<div class="vacio">${t('robot_no')}</div>`;
+  $('#estadoRobot').textContent = robotFecha ? t('robot',{f:fechaNoti(robotFecha)}) : '';
+}
+$('#buscarNoti').addEventListener('input', pintarNoticias);
+
+/* ===== Respaldo ===== */
+function descargar(nombre, contenido, tipo){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([contenido],{type:tipo})); a.download=nombre; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),2000); }
+$('#btnCsv').onclick = ()=>{
+  const cab = ['Fecha','Comercio','Producto','Categoria','Total','IVA','Tarifa','Factura con cedula','Numero factura'];
+  const filas = [...compras].sort((a,b)=>a.fecha.localeCompare(b.fecha)).map(c=>[c.fecha,c.donde,c.que,(CATS[c.cat]||CATS.otro)[0],c.total,c.iva,c.tarifa==='manual'?'Factura':c.tarifa+'%',c.cedula?'Si':'No',c.num]);
+  const csv = [cab,...filas].map(f=>f.map(v=>`"${String(v??'').replace(/"/g,'""')}"`).join(';')).join('\r\n');
+  descargar(`mi-iva-cuenta-${hoyBog()}.csv`, '﻿'+csv, 'text/csv;charset=utf-8');
+};
+$('#btnJson').onclick = async ()=>{
+  const fotos={}; for(const c of compras) if(c.foto){ const d=await DB.traer(c.id); if(d) fotos[c.id]=d; }
+  descargar(`copia-mi-iva-cuenta-${hoyBog()}.json`, JSON.stringify({app:'mi-iva-cuenta',version:1,compras,fotos}), 'application/json');
+};
+$('#fImport').onchange = async e => {
+  const f=e.target.files[0]; if(!f) return;
+  try{ const d=JSON.parse(await f.text()); if(d.app!=='mi-iva-cuenta'||!Array.isArray(d.compras)) throw 0;
+    const ids=new Set(compras.map(c=>c.id)); let n=0;
+    for(const c of d.compras){ if(!ids.has(c.id)){ compras.push(c); n++; if(d.fotos&&d.fotos[c.id]) await DB.poner(c.id,d.fotos[c.id]); } }
+    guardarTodo(); refrescar(); toast(t('imp_ok',{n}));
+  }catch(err){ toast(t('imp_mal')); }
+  e.target.value='';
+};
+$('#btnBorrar').onclick = async ()=>{ if(!confirm(t('conf_borrar'))) return; compras=[]; guardarTodo(); await DB.limpiar(); refrescar(); };
+
+/* ===== Idioma ===== */
+function aplicarIdioma(){
+  document.documentElement.lang = idioma;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ const k=el.dataset.i18n; if(T[idioma][k]!==undefined) el.textContent=T[idioma][k]; });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>el.innerHTML=T[idioma][el.dataset.i18nHtml]);
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>el.placeholder=T[idioma][el.dataset.i18nPh]);
+  $('#btnIdioma').textContent = idioma==='es' ? 'EN' : 'ES';
+  pintarRazones(); pintarVideos();
+  $('#cinta').innerHTML = [...T[idioma].cinta, ...T[idioma].cinta].map(s=>`<span>${esc(s)}</span>`).join('');
+}
+$('#btnIdioma').onclick = ()=>{ idioma = idioma==='es'?'en':'es'; localStorage.setItem('miIvaCuenta.idioma',idioma); aplicarIdioma(); refrescar(); pintarNoticias(); pintarCalc(); };
+
+function pintarRazones(){
+  $('#razones').innerHTML = RAZONES.map((r,i)=>`<article class="razon"><img src="${foto(r.img)}" alt="${esc(r.lugar)}" loading="lazy" onerror="this.remove()"><span class="pie-foto">${esc(r.lugar)}</span><div><span class="n">${String(i+1).padStart(2,'0')}</span><h3>${esc(r[idioma][0])}</h3><p>${esc(r[idioma][1])}</p></div></article>`).join('');
+}
+function pintarVideos(){
+  $('#listaVideos').innerHTML = VIDEOS.map(v=>`<div class="video"><div class="marco" data-id="${v.id}" style="background-image:url('https://i.ytimg.com/vi/${v.id}/hqdefault.jpg')"></div><div class="info"><b>${esc(v[idioma])}</b><small>${esc(v.canal)} · YouTube</small></div></div>`).join('');
+}
+$('#listaVideos').addEventListener('click', e=>{
+  const m=e.target.closest('.marco'); if(!m||m.classList.contains('cargado')) return;
+  m.classList.add('cargado'); m.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${m.dataset.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video"></iframe>`;
+});
+
+/* ===== Reloj y refresco ===== */
+function reloj(){
+  const d=new Date();
+  $('#hora').textContent = d.toLocaleTimeString(idioma==='es'?'es-CO':'en-US',{timeZone:TZ,hour:'2-digit',minute:'2-digit'});
+  $('#fecha').textContent = d.toLocaleDateString(idioma==='es'?'es-CO':'en-US',{timeZone:TZ,weekday:'long',day:'numeric',month:'long',year:'numeric'});
+}
+function refrescar(){ compras = cargar(); pintarSelects(); pintarLista(); pintarTotales(); pintarSim(); reloj(); }
+$('#btnActualizar').onclick = async ()=>{ refrescar(); await cargarNoticias(); toast(t('act_ok')); };
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden){ refrescar(); cargarNoticias(); } });
+
+/* Pestaña activa al hacer scroll */
+const secciones=[...document.querySelectorAll('main section[id]')];
+const obs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ document.querySelectorAll('#tabs a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)); } }),{rootMargin:'-45% 0px -50% 0px'});
+secciones.forEach(s=>obs.observe(s));
+
+/* ===== Arranque ===== */
+$('#heroFoto').style.backgroundImage = `url("${FOTO_HERO}")`;
+$('#fotoSim').style.backgroundImage = `url("${FOTO_SIM}")`;
+$('#fFecha').value = hoyBog();
+aplicarIdioma(); refrescar(); pintarCalc(); cargarNoticias();
+setInterval(reloj, 15000);
+setInterval(cargarNoticias, 10*60*1000);
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
