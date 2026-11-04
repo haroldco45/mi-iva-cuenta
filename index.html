@@ -204,6 +204,22 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--verde2);
 .razon h3{font-size:1.2rem;margin:4px 0 6px}
 .razon p{font-size:.93rem;color:#e3f1ea}
 .razon .pie-foto{position:absolute;top:10px;right:10px;z-index:2;font-size:.66rem;background:rgba(0,0,0,.45);padding:2px 8px;border-radius:99px;color:#fff}
+
+/* Video propio (Vibras Positivas HM) */
+.propio{display:grid;grid-template-columns:minmax(220px,330px) 1fr;gap:26px;align-items:center;margin-bottom:24px;padding:20px;border-radius:24px;background:linear-gradient(135deg,rgba(47,107,255,.22),rgba(255,196,40,.10));border:1px solid rgba(255,210,63,.45);position:relative;overflow:hidden}
+.propio video{width:100%;aspect-ratio:9/16;border-radius:18px;background:#000;display:block;box-shadow:0 20px 50px -20px rgba(0,0,0,.8)}
+.propio .ptag{display:inline-block;background:#ffc428;color:#081026;font-weight:800;font-size:.72rem;letter-spacing:.08em;padding:6px 12px;border-radius:99px;text-transform:uppercase}
+.propio h3{font-size:clamp(1.35rem,3.4vw,2rem);line-height:1.12;margin:12px 0 8px;font-weight:800}
+.propio p{opacity:.88;line-height:1.5}
+.propio .cifras{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:16px 0}
+.propio .cifra{background:rgba(255,255,255,.07);border-radius:14px;padding:12px 14px;border-left:4px solid #ff5c5c}
+.propio .cifra.gana{border-left-color:#2edc8c}
+.propio .cifra b{display:block;font-size:1.2rem;font-weight:800;line-height:1.2}
+.propio .cifra span{display:block;font-size:.82rem;opacity:.85;line-height:1.35;margin-top:4px}
+.propio small{display:block;opacity:.7;font-size:.78rem;margin-top:8px}
+.propio .pbtn{display:inline-block;margin-top:12px;background:#ffc428;color:#081026;font-weight:800;padding:10px 18px;border-radius:12px;text-decoration:none}
+@media(max-width:720px){.propio{grid-template-columns:1fr}.propio video{max-width:340px;margin:0 auto}}
+
 /* Videos */
 .videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .video{background:#16251f;border-radius:var(--radio);overflow:hidden;border:1px solid #24382f}
@@ -479,6 +495,17 @@ footer a{color:var(--lima)}
       <div><span class="kicker" style="color:var(--lima)" data-i18n="vi_k">Mírelo en video</span><h2 data-i18n="vi_t">Videos para entender el tema</h2></div>
       <p style="color:#b9cfc4" data-i18n="vi_p">Noticieros y la DIAN explican la Ley de Rescate, el IVA y la factura con cédula. Toque un video para verlo aquí mismo.</p>
     </div>
+    <div class="propio" id="video-propio">
+      <video controls playsinline preload="metadata" poster="video-clase-media.jpg"><source src="ley-de-rescate-clase-media.mp4" type="video/mp4"></video>
+      <div>
+        <span class="ptag" data-i18n="vp_ptag">Video propio · Vibras Positivas HM</span>
+        <h3 data-i18n="vp_ptit">Ley de Rescate y la clase media: ¿quién gana y quién paga?</h3>
+        <p data-i18n="vp_ptxt">Una aproximación con cálculos propios de un escenario probable: la devolución del IVA para la clase media emergente y cuánto más pagarían los asalariados en renta y salud.</p>
+        <div class="cifras"><div class="cifra gana"><b data-i18n="vp_c1b">40 %</b><span data-i18n="vp_c1s">del IVA le devolverían a un hogar del decil 5 (desde 2028)</span></div><div class="cifra gana"><b data-i18n="vp_c2b">Hasta $3,5 M</b><span data-i18n="vp_c2s">de sueldo: no cambia nada en renta ni salud</span></div><div class="cifra"><b data-i18n="vp_c3b">+$2,08 M al año</b><span data-i18n="vp_c3s">pagaría un asalariado de $6 millones (renta + salud)</span></div><div class="cifra"><b data-i18n="vp_c4b">+$4,32 M al año</b><span data-i18n="vp_c4s">pagaría un asalariado de $10 millones</span></div></div>
+        <small data-i18n="vp_pnota">Video hecho con ayuda de Opus 5.5. Supuestos: UVT y salario mínimo de 2026, asalariado sin dependientes ni otras deducciones. Todavía es un proyecto de ley. Video en español.</small>
+        <a class="pbtn" href="ley-de-rescate-clase-media.mp4" download data-i18n="vp_pbtn">Descargar el video para compartir</a>
+      </div>
+    </div>
     <div class="videos" id="listaVideos"></div>
   </div>
 </section>
@@ -582,7 +609,7 @@ const VIDEOS = [
 
 /* ===== Textos ES / EN ===== */
 const T = {
-es:{actualizar:'Actualizar',nav_hoy:'Hoy',nav_anotar:'Anotar compra',nav_compras:'Mis compras',nav_resumen:'Resumen',nav_sim:'¿Cuánto me devuelven?',nav_sabe:'Lo que se sabe',nav_porque:'Por qué llevarla',nav_videos:'Videos',pq_k:'Llévela en el celular',pq_t:'¿Por qué llevar Mi IVA Cuenta?',pq_p:'Seis razones para empezar a anotar desde hoy, antes de que la devolución arranque.',vi_k:'Mírelo en video',vi_t:'Videos para entender el tema',vi_p:'Noticieros y la DIAN explican la Ley de Rescate, el IVA y la factura con cédula. Toque un video para verlo aquí mismo.',d7:'El mismo proyecto propone cobrar IVA a productos que hoy no lo pagan, como el café, el azúcar, la pasta, las frutas y la sal. Por eso es más importante saber cuánto IVA paga.',nav_noticias:'Noticias',nav_respaldo:'Respaldo',
+es:{vp_ptag:'Video propio · Vibras Positivas HM',vp_ptit:'Ley de Rescate y la clase media: ¿quién gana y quién paga?',vp_ptxt:'Una aproximación con cálculos propios de un escenario probable: la devolución del IVA para la clase media emergente y cuánto más pagarían los asalariados en renta y salud.',vp_c1b:'40 %',vp_c1s:'del IVA le devolverían a un hogar del decil 5 (desde 2028)',vp_c2b:'Hasta $3,5 M',vp_c2s:'de sueldo: no cambia nada en renta ni salud',vp_c3b:'+$2,08 M al año',vp_c3s:'pagaría un asalariado de $6 millones (renta + salud)',vp_c4b:'+$4,32 M al año',vp_c4s:'pagaría un asalariado de $10 millones',vp_pnota:'Video hecho con ayuda de Opus 5.5. Supuestos: UVT y salario mínimo de 2026, asalariado sin dependientes ni otras deducciones. Todavía es un proyecto de ley. Video en español.',vp_pbtn:'Descargar el video para compartir',actualizar:'Actualizar',nav_hoy:'Hoy',nav_anotar:'Anotar compra',nav_compras:'Mis compras',nav_resumen:'Resumen',nav_sim:'¿Cuánto me devuelven?',nav_sabe:'Lo que se sabe',nav_porque:'Por qué llevarla',nav_videos:'Videos',pq_k:'Llévela en el celular',pq_t:'¿Por qué llevar Mi IVA Cuenta?',pq_p:'Seis razones para empezar a anotar desde hoy, antes de que la devolución arranque.',vi_k:'Mírelo en video',vi_t:'Videos para entender el tema',vi_p:'Noticieros y la DIAN explican la Ley de Rescate, el IVA y la factura con cédula. Toque un video para verlo aquí mismo.',d7:'El mismo proyecto propone cobrar IVA a productos que hoy no lo pagan, como el café, el azúcar, la pasta, las frutas y la sal. Por eso es más importante saber cuánto IVA paga.',nav_noticias:'Noticias',nav_respaldo:'Respaldo',
 hero_chip:'Para el colombiano de a pie',hero_h1:'Cada compra cuenta. <em>Anote su IVA.</em>',hero_lead:'Se habla de devolver el IVA a millones de colombianos con el mecanismo EfectIVA. Lleve desde ya la cuenta de cuánto IVA paga en el mercado, la droguería, la ropa y los servicios.',
 m_mes:'IVA pagado este mes',m_anio:'IVA pagado este año',m_ced:'Con factura a su cédula',cta_anotar:'Anotar una compra',cta_sim:'¿Cuánto me podrían devolver?',
 hoy_k:'Hora de Colombia',hoy_t:'Hoy',hoy_p:'Lo que lleva anotado hoy y lo último que se dice de la devolución del IVA.',hoy_compras:'Compras de hoy',hoy_iva:'IVA de hoy',hoy_racha:'Días seguidos anotando',hoy_ult:'Lo último de EfectIVA',cargando:'Cargando…',
@@ -603,7 +630,7 @@ rs_k:'No pierda sus datos',rs_t:'Respaldo',rs_p:'Descargue su libreta en Excel (
 conf_borrar:'¿Seguro que quiere borrar TODAS sus compras? No se puede deshacer.',conf_una:'¿Borrar esta compra?',imp_ok:'Se cargaron {n} compras.',imp_mal:'Ese archivo no es una copia de Mi IVA Cuenta.',act_ok:'Actualizado',
 ft_1:'una app de',ft_2:'Herramienta ciudadana e informativa. No es de la DIAN ni del Gobierno. Las cifras de EfectIVA son del proyecto de ley y pueden cambiar.',ft_3:'Fuentes: Vanguardia (30 oct 2026), Portafolio, Prosperidad Social.',flot:'Anotar compra',
 cinta:['Pida factura electrónica a su cédula','EfectIVA: devolución de hasta 5,5 UVT al mes por persona','100% del IVA para hogares en pobreza','Arrancaría el 1 de enero de 2028','Proyecto de Ley 477 de 2026, aún en el Congreso','Anote cada compra: cada peso cuenta']},
-en:{actualizar:'Refresh',nav_hoy:'Today',nav_anotar:'Add purchase',nav_compras:'My purchases',nav_resumen:'Summary',nav_sim:'How much back?',nav_sabe:'What we know',nav_porque:'Why use it',nav_videos:'Videos',pq_k:'Carry it on your phone',pq_t:'Why use Mi IVA Cuenta?',pq_p:'Six reasons to start logging today, before refunds begin.',vi_k:'Watch it',vi_t:'Videos to understand the topic',vi_p:'News programs and the DIAN explain the Rescue bill, VAT and invoices under your ID. Tap a video to watch it right here.',d7:'The same bill proposes VAT on products that are exempt today, such as coffee, sugar, pasta, fruit and salt. That makes knowing how much VAT you pay even more important.',nav_noticias:'News',nav_respaldo:'Backup',
+en:{vp_ptag:'Our own video · Vibras Positivas HM',vp_ptit:'The Rescue Law and the middle class: who gains and who pays?',vp_ptxt:'An approximation with our own estimates under a likely scenario: VAT refunds for the emerging middle class, and how much more salaried workers would pay in income tax and health contributions.',vp_c1b:'40%',vp_c1s:'of VAT refunded to a decile 5 household (from 2028)',vp_c2b:'Up to COP 3.5M',vp_c2s:'monthly salary: no change in income tax or health',vp_c3b:'+COP 2.08M a year',vp_c3s:'for a worker earning COP 6M a month (tax + health)',vp_c4b:'+COP 4.32M a year',vp_c4s:'for a worker earning COP 10M a month',vp_pnota:'Video made with help from Opus 5.5. Assumptions: 2026 UVT and minimum wage, salaried worker with no dependents or other deductions. Still a bill. Video in Spanish.',vp_pbtn:'Download the video to share',actualizar:'Refresh',nav_hoy:'Today',nav_anotar:'Add purchase',nav_compras:'My purchases',nav_resumen:'Summary',nav_sim:'How much back?',nav_sabe:'What we know',nav_porque:'Why use it',nav_videos:'Videos',pq_k:'Carry it on your phone',pq_t:'Why use Mi IVA Cuenta?',pq_p:'Six reasons to start logging today, before refunds begin.',vi_k:'Watch it',vi_t:'Videos to understand the topic',vi_p:'News programs and the DIAN explain the Rescue bill, VAT and invoices under your ID. Tap a video to watch it right here.',d7:'The same bill proposes VAT on products that are exempt today, such as coffee, sugar, pasta, fruit and salt. That makes knowing how much VAT you pay even more important.',nav_noticias:'News',nav_respaldo:'Backup',
 hero_chip:'For everyday Colombians',hero_h1:'Every purchase counts. <em>Track your VAT.</em>',hero_lead:'Colombia is discussing refunding VAT (IVA) to millions of people through a mechanism called EfectIVA. Start tracking how much VAT you pay on groceries, pharmacy, clothes and utilities.',
 m_mes:'VAT paid this month',m_anio:'VAT paid this year',m_ced:'Invoiced to your ID',cta_anotar:'Add a purchase',cta_sim:'How much could I get back?',
 hoy_k:'Colombia time',hoy_t:'Today',hoy_p:'What you logged today and the latest on the VAT refund.',hoy_compras:'Purchases today',hoy_iva:'VAT today',hoy_racha:'Day streak',hoy_ult:'Latest on EfectIVA',cargando:'Loading…',

@@ -1,4 +1,4 @@
-const CACHE = 'mi-iva-cuenta-v2';
+const CACHE = 'mi-iva-cuenta-v3';
 const BASE = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
@@ -9,7 +9,7 @@ self.addEventListener('activate', e => {
 });
 // Red primero (para que siempre llegue lo nuevo), y si no hay señal, lo guardado.
 self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
+  if (e.request.method !== 'GET' || new URL(e.request.url).pathname.endsWith('.mp4')) return;
   e.respondWith(
     fetch(e.request).then(r => {
       if (r.ok && new URL(e.request.url).origin === location.origin) {
