@@ -1,6 +1,54 @@
 {
- "actualizado": "2026-11-17T00:33:59.831Z",
+ "actualizado": "2026-11-17T08:39:05.575Z",
  "noticias": [
+  {
+   "titulo": "Sin IVA a la canasta: qué queda de la Ley de Rescate",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1Eb2pGSTJkWVp3Q3FsXy1nSFNUenRRRlBBekxyclg5XzlaQ2lzYV9DSm9YRXpxU3FUdm8xZ2dPOGJ3aUZxQmE3T0d6ZzRSbnktTmQ5a0ducEQyNVl6ZjNlTnVMb2w3aElqUl9mZXlUdVk3QTE3Nk1GNVJR?oc=5",
+   "fuente": "ABC Economía",
+   "fecha": "2026-11-17T07:49:40.000Z"
+  },
+  {
+   "titulo": "De La Espriella descarta IVA a la canasta familiar en su Ley de Rescate Económico",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcHpyUkdUc0V2R2Y3d0pBR0tHWXhmQzRqNUlaSzdvVDlYNUJlSmNRazlXdTRWaEFlVmtiUmdRZ0VxaW5QX2JFclMwMHpPdDJyemxwWXE5SDE2R3pmOF9veHI2RkQxSF96Y2Fqai1BV3FDWGpXRkpjV0JDQ2lvQWlBOGlfYnRXVTE2WnN4Y0p2cHhOdVpFMkp4R0dKZElUemRf?oc=5",
+   "fuente": "Toda la información de Nariño, Colombia y El Mundo",
+   "fecha": "2026-11-16T23:13:06.000Z"
+  },
+  {
+   "titulo": "Reducción del IVA en productos de la canasta familiar sería compensada con otros cobros por caída en el recaudo de impuestos",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPS0hXc1pXanBYVGlkVi1jSWZmU2JzeS1CN0dDb3ZGSXpiVEJtOGlkdU9yV09kNUxYS0w2c3B1eXd5YjQyeDlFREZ0Wm42SU8wLTNrOFY3RjZMN0QzNGZHV0tTZEtoVWlvZmRmU2ZFaC1EbzlpanZ2WTh3eThva1VWbXFRaDRzSTk4cmplREZaZjFmTV91SWt0MG9SREJ6UVZFNWptV0lxUDlDQk94M1lpS1JNdzhiNkNRZzZPYkEwVkczMDBaV3RTc251T0hiTE1xX1pqUWEwc2JCdGVIaTlkMWZWUWJNZ2d5Rjh6VmtYX25rOF9URklzeGplaVR1UdIBmAJBVV95cUxORzNaVnFHNDRBYktOUnZVLUY2azFSclBiVi1vV2xpVUZjOXprbFNFYTJQODRiZlpnLUhzaUJPYl92dGwzeFEtX05hXzlZWWtkLVNXQTdLMEdZZGRqREFTOFVlRUVjLXR0NGpsQm42bFBRZ2tTZjg2Qi1YUG0zUW9VdGlPQktXSkRnTTlTcVRBMkVjUU82YWIyQU8wdlppNzRIS2VjaFdlRXQ1Qm5KWi03UWlQdmdPSVVaWEJ5VVdQT2VhbzF6UE90UWU4MkFMNGhGamFhZHV2Y1dOWUp2LXhOQ0pOUTN4SXRYS1JVZzZ3ZVJMV0QtS014ejZWZXJ6TG5CZjFGcjdiajBNS1VneUEwY201U2RPYU5u?oc=5",
+   "fuente": "Infobae",
+   "fecha": "2026-11-16T23:04:00.000Z"
+  },
+  {
+   "titulo": "El proyecto de ley de rescate en principio permitía que bienes exentos o gravados al 5% pasaran a la tarifa general del 19%. Ahora se espera que el nuevo articulado sea divulgado",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPM2R2cTJrVVRTckRpaWUtQ3FUV1lGZ0tfU0tIVDVtcEhITkU3dERobXpMdnhrdE53SGJFNEJ1YkpKT2ZoWHFrbHpWRG5kVkxTeU0zTzd4N0REVEd2eW1mb2hvZkpMZjJxRWJtWWRtZmd4RDN1TlBubnQwMEdVNDRWODRYeEhpa0E2VTc4alJ3eERpWWtqS3MyQU9wbWtlYlpnaUhNSEJicTdmZW40SlBxenZ2NXZtcl83RkptYWVvY1lqRWhuVFFqTm5MNzZOb1BRemRqZDJZMGZITmp5aDRzNWJXTEQ?oc=5",
+   "fuente": "Facebook",
+   "fecha": "2026-11-16T21:55:25.000Z"
+  },
+  {
+   "titulo": "Así está el ambiente en el Congreso para discutir nuevos impuestos ante la eliminación del IVA a productos de la canasta familiar",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNeDhBcDFTM3I2U3hJZWdIWG5NbjFGajNOZHlSdkFoOC11Zm1VOWNsa1cxWThTMkUzbmluOXBjc1ZSaFJZT2Y3WjJLNEQ4aUJoN05pTXM0S1NyS0UxQ1h6LTN6NXEyRkY0WTBMTnZqcWVVT2FqdnRxdnB3QlpjeG05MzRNcktPcFZtci1XbDMtLWlWbkZVeHZsa3duSXhMZlpNNDEyVlVYX3pJZ3VwYWZCdVgwcjZvelhfN0dLLWdjTDhsNFQwM1RaSzNVV3JIalNWdGxxWHV3YUd3ZUtZb1AwWUJ2eWdYb19hMDEzNFBUajk2NEJKYVMydGZ6MXoyWDliQXRsSdIBnwJBVV95cUxOWTdyaW5CTWNFY3hwZGxOTGV0VVZHRXoxY3VVOXNGdGpfRTFPaURJbHc5X0E0UzdDOGlHdDhnVElCMFF0UmRqeEJWNmgtSWU3RDNSbVVCWWNpVzhIYUJBeS1jUHc3WjgxdTJ3TmpXZE9GWHRmWlZod0pUR0QzWWFWMkRuS3V5RmljNnFablhZSG4zSkJObS1SUTlZRTVtSzYtQkhTSE5ZcUxMZDBTN2QtMTJlbE5Jdzc0RXpJTUdweWJvQTdGbnY4Y1VoVlR1cS15LWFqeFNNVHpPb3IxajF3R1Zwd3RHSVBCcXlIYmNyRWplcXZxaktUVWRHWDhzRVdiNklOMjdfSFRPOXlzM3kzTE83ZGNRM0Z5S0tZemtwbw?oc=5",
+   "fuente": "Infobae",
+   "fecha": "2026-11-16T21:37:00.000Z"
+  },
+  {
+   "titulo": "¿Qué pasará con la ley de rescate económico tras descartarse el IVA para los alimentos?",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOLXVOMnZKRTNkajgxa0c0WEJWelNBVnBUaTVYZ2hTc1VGYTExQmpIV0g5QlFtbHk0SVRfaHVLaGxJdHpwU29JZl93SzhNNnBJOTRKcUtzNGNOcTJqRU9hdmJFakF1V0FRaEw2djgtSVFLcENSLTFyMWdnQnBueFZqMzZhbGdiMDRwMG8zRzJCaG5pU01ZWFJGa2dGQVF5V3BzS082amhLRWZ1aUtFY0NjNEVFdHJ1ZW4wY091a3JtV1U5WkZYTGdReGtJQdIB2AFBVV95cUxNNlB4ZVBaSzl0WEI5WXdyNUxyMndlb2hrMTlxZk9adk5HWGxnVjR2bENJVmw2anBad29EWU85VDFZUWRJWmNhOHpnd1BRWlZLeFJJV1BGMXhIcGNQMm1Qb1NOVEVCYUtFX1YxNEVHRWlKUnYyYmdrVkJXRlFVeXdVSG43clg0SzFnRjE5V2lUYjdPeXZ6RS0wR1NFd01KQl9nLTI1TjI3ZUZaeEhBNzBPczNKb0RDV3pNSDBjSWNmaVQydmw3YUJlYjdydTVFVk5lVnhrbzd0Sko?oc=5",
+   "fuente": "Noticias Caracol",
+   "fecha": "2026-11-16T20:16:20.000Z"
+  },
+  {
+   "titulo": "Banano, limón y coco están entre los productos de la canasta familiar que no tendrán IVA ante anuncio de De la Espriella: esta es la lista completa",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPaVZvNmg4REd0dm82ZUNvQUdwc0VyQ2s2MHA4QW1zb3ZVc2NNQ3FET25nY1A2ZjRkc0tKNzl3bkI3NWZNWWNtYzZHczJUUE5nc1Zka2FYaU50VDVoT2diekJSMTFQYTVyTlJqQ0RwY2hZbjhkZFFVZU42WHA4STZWYU1pZVdoY2E4NDFZV3lFOUFPYXJzWWhvY3FGekpDOFNKakxYQzhxUWlZUE5zT1p2VllNWl84SkdURzRGSnBoZV91enJBdTBXZkNkZVkzVFNfeEc4XzZjaWJ3dlBPeDk0YThpZ2U2LU02cFFTdTBRajV3QXpMV0EyczlfYnpiRlV4bmk1TXNzSDJFaXJGS1pHaUdHMUtOUmdPeGfSAbQCQVVfeXFMT2JjdjZmMFRrcklIREs5VU1BUUl6QnplYVFkOUJsenpkTzlOY1lSUWI5Qk9mcXVZYllQbmJ3Zy15TU9Xdm9fYUxSLWcxZU04TDNGV2dtLUVzMjltbVhEcVdwMXZyRVVtRk1nQmZGR0hPVGozN3BBUmlkNmdwUktLVkMyVmtuLTlMOW9YREtWSnh6aDUzekxZVTJnWUpjeTdQVGdSS2tvd1dJS0J0djgwNkpqOTNJSkJteGx6NDhLa21jQ0ZVVHdvZXM4Rm9UeVJ5aHF6UDAyLTNmYlM2TzhjZTU1cDdyMzd4OTlwVTZaQXprS0xYdVpFR2d5YS1HQi13d0gwaWJ2VmM3RTFtWG9Fa3Q4X2FNZTJpZGRhelNfRWpfWUFVaFNQVGZZdkpNcTdqNFdaVFA?oc=5",
+   "fuente": "Infobae",
+   "fecha": "2026-11-16T19:52:00.000Z"
+  },
+  {
+   "titulo": "'No proponer IVA a la canasta familiar e insumos agrícolas es señal de tranquilidad para hogares y productores'",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNc1VuV2hOakVoTHFDRVRMdkdWYzFDaEFtSzdEYTVxLVlQMmp1ay1iZ1JNemU5X29qOXdqOEdydVBnUEJ2MGZkM3hieEh3STFnbllNTEMyTk9HOHVIdnRLZWNWbEx6XzZKblQ4M05vVnZnTEpiVGJGblpCM1V1Ylcya0M3RDdPZXRjOVBTMllJeTk0VjVXa3hDS19XRVhEaTRucmYyQWt3MGp4cEhTbklSa1VSVHk0OHdLaGtLT201RC1RME8yZjRlNlNiczdmMUV0eVhCM0lubDhxd1V1clY0SHpldVUzWHhxZV9yaE1lSml6YWhjOUZXQXlYTDc2eGfSAYQCQVVfeXFMTU9hcktEajNDUnhicGZlV0M1RmpvZDVBeXREeU9SbTVZb3k1anEzTVNqZGJYYnc2Tm5jTTVCakVRU1U2S1hZVjdaM2pXS2Jpa1V3cWo4Njh2Nk9HNFlxaDZmcGhpeF9TYW9ya3VzNHdQejBtNWVaNzZvRTZpZkQ3SVQ5LURjSmNtdjF6SHVhZHl0R0ZXSHNMdEFTSDk3cmhxaHZ4VUkzWEk5cmJDNjM1VUIxbWg5T0RSaXk5RjJEb2QydzUtMVRFTEZHaXBpandUNU9rUVROdHBsbFFrMEFFQ3pIbmYtMjhvVVRkV2JnZzRtOWJOdEs0X0FjT01ZWWFZUE10NGo?oc=5",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-16T17:47:00.000Z"
+  },
   {
    "titulo": "Gobierno De la Espriella estudia cambio que tendría el IVA en Colombia: Bajaría a este porcentaje",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUGhjc2xOblRuVk80TDI4WkRJSjNJM3ZIaVFQMzl4Uzg5blZ1aUZSMk1lMk5HeWJJMjZ0am5JNWtWR3BhNEpSXzJtSDZDZktKV0Z1OWkzOEpsMXZKVUxQd1NaUWc0TFhyTTgwLTRhS1pSRFRuQWluTTBjM05OOEc4bVl6alBSNlFTS2NDT0hidXFPTDhVX05VOFZGZThCejFndFd4ZzlPR1gwZElRSjhVVE0xQWNtM2dseXduT0k0ZjNPT0xxWUdR0gHMAUFVX3lxTE5xRGRVbUR6SzkyeEgxQ0M4bC15NmhiNG9DWjJsSTVUczd0ZjlkS3Jtc0tIdGlvYU5OdjFreGt6dXVQTlVVSWRsNXhFTW5Ia3lJQjVYTlFxX0hlaVJLTDExZjEtYndaZjU2SjcxdDhoTGx1Nm9acE5mZXdzZ1EyUGF2UTdjTE12QmR3LWxBbi1uZ1hFWHlsb19LbmRoRGViTlJqcHkyQ0E5T2x6aGdzVVBBQzhFNW9iUTZXNFNBU0ZoMmdvVldfdW01cUFLaA?oc=5",
@@ -12,6 +60,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQazVyanNjcVBUM1JTazhKS1JQYlAzSEhpaTZiZERHc0pDbVJ5UmRLREJFSEM4VkM4cVFhanYtbjRBQ0N3d09FMlZ1cURKTUNFMUE0MUtwUVk0NVpTUFFZZm1uQlB5ZUVYQzhPbTd0YkpGYjY1Z2trbHExNlM1Q0xrZEtVTWN5ZlBsNVhyY0VXZGRQMDZiM1JXS2dwb1lQXzh2ZFkxVWhiaDh2YnBMMmVvZkhtVWpCMEtNZlFR?oc=5",
    "fuente": "La Patria",
    "fecha": "2026-11-16T17:00:51.000Z"
+  },
+  {
+   "titulo": "¿Cuáles son los productos de la canasta familiar que quedarían sin IVA en la Ley de Rescate?",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaXQwdm0yNEVRLUdRWWJ5dEM0WHlEb2NKaGsza0JuRXdlRmI2YWhyX011U1VLS0lNbzBNdVRhSXVocDg3M1E1UktpSXFVRkwtYTFMUVZINEptaUs3T1FRc21rWEsteWdYVDhhT0tLWVR6QjFnc2toWjBWM1ZoZTVnRXRteXR0VC04RDRQRl9seU9ZQ01LZzQ1MnNlcnRZbXo4V054Y0dRU3hiY3VXZll5WUJDZjRVR2NZV1NZajBXUEJsSHVQem1rV05pcnZhbHJpVVE?oc=5",
+   "fuente": "ELHERALDO.CO",
+   "fecha": "2026-11-16T16:56:39.000Z"
   },
   {
    "titulo": "¿Se despeja camino para la Ley de Rescate Fiscal?: Congreso celebra que no haya IVA a la canasta familiar",
@@ -66,6 +120,12 @@
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOVFJ0VXpOYTMxeFBhX1RwYkVGbkhYb08yUnBibmxiMzltTkNsZEYtaTl4bnA3WjJwS2xKT3dLNm5rQ3JrbTdTX0h2MzFvY0Q4OGNrUGxtemk3eTIwNDI4c0k0NkRvT0YxeEFjWU9jc2FRWV9qamZsRWVCcnhBQVJOblFNS0hmUEpuZnpaMmlBZnVhLTRnRFlxTkhXTmw0YWVyNW5yckZ3dF9YQ2M4TWVQMGpQMFBaMVpPMEgxcGhhNkw4a2tzWUFySktvV2UtVmMxNjBJeVNzcjVpQzZCaF85SW1wdWxZaEdNckZDZV9iUWhZOE800gH6AUFVX3lxTE85OE14cHQzb2N5TU4tZ3Vmay1xZHdmdjdVR2dhd29TQ3lTS3JkLU84eDhoZDAxM25yUWpOLVBwTkdZZW9aMHc0T3N1ODBLdzFJOU1EMmJ4a3V6OGJlTGJQeVNYOVk1UTNObkNVMllzOHNFYnNqVDJfQzI4SHlEUkRqWThtVXlfTllJbDYxOWRGN1ZzbzlVS3k1SkJCa2NnS1p6cHJWd0ZQNWpiLUNzbHIwR0puRXdnWEdvcU9IMFhFa0txYVc1WlVmWkd2VndHVWQzZnNpUGJxdWxjTWlMU0Y0MGFuMVVoNEFsRkRhdVp1Sm5wYjN0bjY1UEE?oc=5",
    "fuente": "Revista Semana",
    "fecha": "2026-11-16T12:22:30.000Z"
+  },
+  {
+   "titulo": "¿Qué alimentos de la canasta familiar no tendrían IVA en Colombia? Esta es la lista tras anuncio del presidente Abelardo De La Espriella",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNekVIc0dDRi1QZlVGX2l2WGhNRnV5cUZraEd4QXpUSnFKVzdJTTRpNlRSXzMzSzJmcU1QdEpIQm9VRkF6dk9PSFE0b2NTMTBvR3p5Nzd2WmdXcnB4dS1GQWhjcGJzOUNIbzZnRnNjM1RCSmVwLWNwNTA4cFk3UDZBM05FRGNqMndQTlRWTDZhXy1GaGxwSm1BZW9PdjNUeE1WV3RxdG1qU0tCYnVTc2ViTmVnbnBweFllemkwdjQ3cmZ5cThoRXRRR3FBV0cwLXlnSDQ4T1NhanNDUTdWSmJWYU5HSEljU1picFYzcVBHZ3pfc19LbXAtdURLeTRaM01lQVhYVk4zU0V5RDE0SUFVY0Y1RzBnU3RwTDRSUWRfaXdYUdIBpwJBVV95cUxNTnlWRW9HLS1NUU03Rmc3U1oxNDNuU1BlNWRQRjRVcDdhVGZBWDZpaDd6aTJzVTZfT2dMN3JzRE5fLVh1NW5oWVFrU3ljY2lhR2hUbmw5cmxZRXJYWUpyMkl6QVJQU0JDemh6R05IQVRjemJQaFY2aWRJZHZDWVVKU3VqNTREenp6V2wwZEVxY2lnb0E4aldsR1k1M0pqUXZwX09ocENKV0djUmlnejExQVVPN3RPTlBkT1FwZERtMlNXbUxtSFNXMWRENGc3WnVZNEt1ejZWTktQbnVNQUE2MXRlZHA1aFFhTldXRTZFU2NNanlVWlpwQWVfMnhoclUyc2R3Y1ZTLS1CVnROUUlwSXl3RVlEZVhuZHhiUXpRNG9UMkNWWmFR?oc=5",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-16T12:16:39.000Z"
   },
   {
    "titulo": "Ley de Rescate Económico en Colombia: debate por cambios tributarios, IVA y su impacto en la canasta familiar",
@@ -134,6 +194,12 @@
    "fecha": "2026-11-16T01:35:18.000Z"
   },
   {
+   "titulo": "\"La canasta familiar no pagará IVA\", aseguró presidente De la Espriella",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcDVfX05WdGFWOXNJaDFfWW0xQ0Z4U2xtcE1PNDc1MkZXclVvMXY4UjdVWU9ESmJOLTBTNEFtSjItSjhSMWZ2c1hfdFhSMEZlc19lWlk2TzVWaC05c0txSkE0Tm5oNjZtQVhjS2M4T0JZeUJVaGdJOEFXZmJaVTBjRTg1eGpBRmt3TFo0OVJfSDlzTlY4emQzN09NU2VrRDlUNnN5SW5MMlk4WVA5aGJDdkk4cEfSAcIBQVVfeXFMTmQ5aXZkRXhabXl1S0FLUmdWdWhHN2FUbkw4N2xuSGdGYS1Jcm51Wi1FejM4SkctNmJuQ0QxRDZPTDNSOU8wVkRvM3pyNm9HTUZDWXJEdy10VDlTcngyU2VZTVkwcHlUbWtfdVFWTFBnM0FNc1N0c0s4dm54UElhOGZnY2JxbDRKTUVRbDJhMVVRdmV6d0Q2MnVfWTEtOXpjdUJJWEJPNm53VmxNbDZHcmZtQWV4SWR1M2d0cXUwQkhHQUE?oc=5",
+   "fuente": "Noticias Caracol",
+   "fecha": "2026-11-16T01:24:12.000Z"
+  },
+  {
    "titulo": "Presidente De La Espriella dice que no aplicará IVA a productos de la canasta básica en la Ley de Rescate Fiscal",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUV9qSDFGWFYtTTJRblo2T3NlbS1hNUdwYjVqNlZSZkxDU0NhRTdoMlpacW80SzB6a0NYLV8wUS1VOWg4MGFibWQ1OGVaNmxRY3oxS0VzeVhUb0s3MGx1WEszNnN5a295dV94b1ZCU05Xdmt2dHdCOUd1QlBxUnFRdGI5RjdXT0NWdzJ5VzRkalJjMEROSEt0VEtRSnd3MUp2SXZnRE90NGlDbVlna3lDaGtqeFZIQ0hlX0lOUmc2UUJGRXNaX01ja2VHSlRDNHoyclpjeE8yV1pEVzdZ0gHcAUFVX3lxTE11aFdfNXN2OUdxWTFtWkRDZnhHYzJrTEtyZ2pNQzdKOE9uNzlpdURfSWU4c0MzWFZQWTFFeGdVNEJvOXpJdElIbDM5XzFjd282WThZb01SU0V6RDRreTRld1MzYzNocWRYVThqdFZoSzFfQUlab2lMcUZEeFliVmJOMmJtSWMyanNSM0o5RWZScnhKaFNwU3pKYnVvVFpBNm84MkRrUDg2azd0X3kwR2hlMGx5UmF2dFUza1BlOFozWVZoVzRJYzZKZWdfci0zNmpnNlo1YlhodXZMaWY?oc=5",
    "fuente": "La FM",
@@ -174,72 +240,6 @@
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYTJhNkVzTUZESWJ1MzVTdEQtR2tBQ18zR2ZuUl9aQ2dOOW1IVUxteTJwNlZmR0FhWlVUYmtfMW1nZWU1TFg4d2xBa2Ewd2NqRXl6NTNNTlNuaXdBWFdhOUFGaTZndUtvT0g0b096alVELUhGUE9XOE02M0J2QTVQR2NJUUY4WFI5RFZSUmNzOTZfSm10elpj0gGcAUFVX3lxTFBIRk9WZndIT0VZZGpiZlluXzFEZ0lCUEZTN2JaWUVlZ3U0X0dJc1YzV0pfd3Z3NWFuQ3pILUd4bUY0TEVRd3RTUk9TYkZNRVViQVFtY05VbG5YMG9ySnFfNXdKUVFYbU05Sm91MDRkNE5fem9hOHBNMHJuSGdGNmd4elNlWU1vMFlqX1VYWURvSFBjSmE0SV9DYmhrLQ?oc=5",
    "fuente": "El Colombiano",
    "fecha": "2026-11-15T00:09:28.000Z"
-  },
-  {
-   "titulo": "Centro Democrático propone tres días sin IVA tras analizar propuesta de Ley de Rescate Económico",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQ1ZoTHNMUENjUmMwUGVJY1dJLVlyU2R2X1FqaWFjaF9mVmNXTkxuRGdOd2t1SUhuRWFPRHNQOGl0ODFOZVVQcTF0aDFfbUo1SjB0dkNzYXBHRlhQZ0pZcGlyZ0ZEYkk0YzY2dVBCX2d1Y3IwOEpXSU9SVk9Lc0JhUGxleXZkVUp2cldKUzVWR2NfNGUxY2ctM3NrY1pNTGdield3NVl3a2tIM3BDdkF1b0liVTFFWnVHakZJRkpiemNsbTNpMl9ndVRPUTVDVzRKNXBkU3hrVnVzV2VQTkxZQjhoU1VqZ9IB6wFBVV95cUxOakRvRWhTbXg0UWZBemZtRlJiMU0tMTU0ZGhabHNvNjVGcHlzYjhZQ2NYYkRTSlliQTNUUHEzWTZOeDV6ZWlOS0dSQm1QVkpQemlhUEYwUGpPdHhqM3VKeW01U1NrRm91Ykdhd3BIVks4WHo2S2hGZUFTOE9UWExZVjdQZk82aUZOUE5qYXVZZTdtZWJsTUhUQUFhUE1FZ3NSYnkyaHMybEN0VU9fbENZS0J4c1FpYTViZXZLM0l0UG9mb2lYMmF1OWtreVR2TVYyX1JnM19kT0ttNGhjd1JXbFNGVGdKZWZNNEJJ?oc=5",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-14T23:05:00.000Z"
-  },
-  {
-   "titulo": "Centro Democrático rechaza nuevos impuestos de la Ley de Rescate Fiscal y propone alternativas al Gobierno",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeEhYdUZKMnVNMDktN3NSQzJRLW9UN0hBNkIzRW8zME5BTFBFRldGb2otNnB5ZjN0TXBpZzlEdlI0NEhuZVNodEhZVXdwaFpVVTZ5eW14VS1LMm5GODJZa3FVa2JBWDVNc1VWQXd2X0ZtLTJlUm5aYXZJaW1lTHNKZ01UMk8tekJIQjJGMGVrZWc2VEpVN0lxdDlhMEZaYVhKNzVyOWZCaXg3LU52LXZTalpMMmN5TkJJVm4wU1NGdmtJczc0enphbTRhME5tVm5rTy1rMVVVWkQ1Q3ZGUXBURC1B?oc=5",
-   "fuente": "Agencia de Periodismo Investigativo",
-   "fecha": "2026-11-14T23:02:31.000Z"
-  },
-  {
-   "titulo": "Centro Democrático concluyó reunión con el Gobierno nacional sobre la Ley de Rescate Fiscal: esto concluyeron",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNckw1Z0VGaUxKTWtsdHFCWjVsQTRsTF84b2xxMnhnUHhsT0N1eW9ZY2JjOFFsU1RXb1FfbzYtYjRHS0xPOFNxVTZHR1otLWQ3N0xXeU1rMDB4NEhEQ29hWkp0SEFHMy1uUEVCcTB2MzBjS2VmdnhMelFBZXdPUkpsTXkyaWYydlVUN1RoUFRRZnVwaDhpb1dJWEdubUV2YUJUQ1AtSnd0czctZDRMbFpLVnFkdkZRUHpkQTFSSDFNYXF2Z3JIb3BtdWVRY0lDcjVLMmRlUk04SmdReEJkM0pyeEtRVmJiYUt00gGDAkFVX3lxTFBqdTVkNmVla0RaWEtlQVFQTDNwVXN0MmdQQnJ2eVdyOGRkaDR1R2Q2WmR5ZTUwYjdSSTFDV2gtNXA0a3kxdFlaUmxSRC1aV0QyLUJyTjlpWmtEZGRsOWR3cDhlRUwyb0dHd3NtaWFzTTFTdVpEX3RMbFZlaXI1MlJRSzFKODA0MTVqelRxZWRnbWUzV0FuaVkxQ2RhLWVKWFJiWl92eERtd1piNHFNOFA3YTAxdEswXzJ6RVdSUkVISkFMTm9Qb2lmNUU1d0VuTV94SWdvWlZEYmduU0xadzRXd0lHWFBkdVpBVWNLNGtZMGxDOFFsTE5EaWYtZGhOSzB4ak0?oc=5",
-   "fuente": "Infobae",
-   "fecha": "2026-11-14T23:00:00.000Z"
-  },
-  {
-   "titulo": "Renta Ciudadana y Devolución del IVA tendrán quinto pago en noviembre: Estas son las fechas",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcFZ4TmxZTzBRaE5KSGwyakMtZTVYUFZsRHBjcFExUk1FZmZjZG1GdTB3bnNBMmx5ZDRYMEVQdHdqNG9uNGdtVUdZbHV1LUhYckhTYndVeG5nbzJwbHczUWhlZXdnWWpQWWk2ODNuQzQ4NkFQVm92U1luSkhrVU1VTG1lSU0tWldoeWdTSlZtQ05qTzl2Rnl4dExkQ2s0aEI3V1BFTFJBbHRHZzZFSWc0cHdnQzJCdnQ1NWZCbjRTeDZiWjN4RnAwRw?oc=5",
-   "fuente": "Newsroom RCN Radio",
-   "fecha": "2026-11-14T22:16:28.000Z"
-  },
-  {
-   "titulo": "Centro Democrático propuso 3 días sin IVA en discusión por ley de rescate económico",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZ25PZ01NNW1tSXhpTWZTVE94VDM0MHBxOVljRGFrS1lyS1VJYlpWcVg3bUo5NEZ5anRQb2JWVF93SnljbVY4czdFODYxb2Y0VTJNeGJQZGVSbHRqdnRkQ3pBeHZNMnUxODB4OExMTmFIc29uOW9JVkU1QnBNUjJ2VThhc1k3dHVBbUZBWkhGUHBfZV9hcUNveHZPRFRkV3RGWmxlbHluY3czYnFReU1RdERMMHJNbkRtcHZBRVcza9IBzAFBVV95cUxOcS12V1J4SXpkZkVnUzFtaHlFNGp5RW4xUmhzMm5pYVdUUzZWZEhKZTRCRHFuamRzUGZFN3QwMHMxS2xzUXR3YTVHMVIzYWZDRkpoTjg4NGFZVWpIeEpkY0NJUlZIbTAtMmkwa1FzbWJZUmZqUUQyMldXSTA4YXhqWmpweUVYdGxMdzZrVEFUbHZDRWotYXJ5YVV4VnJSeHN1aGZSWGtHS0ZzcWM5Z21WQnpQNEFYVV9TN0wwR2RwWGdLMEduZ2dCQ1hqUVg?oc=5",
-   "fuente": "Blu Radio",
-   "fecha": "2026-11-14T20:44:34.000Z"
-  },
-  {
-   "titulo": "Los detalles de la reunión del Centro Democrático con el Gobierno por la Ley de Rescate Fiscal: ¿qué acordaron? | El Colombiano",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNVpURndsaHcteWtySWM2aUtZWXNUNzRIY25NZkk1QmJwdXJUaEJOVmZ6RFNCTXZqSVhmOUlrN1BXOExVeno2ekVteHdpRzZPT2xhTGFuTktnN21VU1dlQ0dhU195YmJUdUcxY21sRFNpVmNoQmx4a294VjFGZE5kV09rYm40azZkeFdSWVlWaW5BdVJoUHBkOF9mUVpQb3l2SHFOMzdpdWpZV1J4RXNqb19aX0Jycm5ZSXd3cHZGZXQxdThjLUVpOTloVWotNWV0WTAtb0RrREwxSlVzcHVqX24tTHcxZnhEUmNkYXZB0gHzAUFVX3lxTE8xcmhIOFFWT2wwZnEwWF9sakdtZ2pCVGhScnJKN1UzaEZtRnZ2NzJCaEVDYU5Oazc2VmNSM0lGRnpHeDlBRnZnaVBGZGpmbjN5YTdVSWtlQzdwUzBIelFVZm82TU1zMTJ3bF9QLXVHMjBrR3A3RzJqQjhNVHdCLWwzTk5FX2J5UFE5OGNaaUlWU2czdHpKVUNUa1k4bkdJNzdyb2xkY0tPbVI5bXJnUjJCbVd1MExFQlFNUjkyMmFOaVQwU3E1Y1RjUXFUdlo0RkpnYWFIVUN4Z2VWVTl1M3pBcFFKS3JYZDdWVFhMZ2l6OFROcw?oc=5",
-   "fuente": "El Colombiano",
-   "fecha": "2026-11-14T20:14:58.000Z"
-  },
-  {
-   "titulo": "Ministro de Hacienda se reunió con representantes del Banco Mundial para exponer la ley de rescate fiscal",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVWZLZWF4NUhGZjVFY1hlWXc4bzBQUkhFVmlBUHZGVHNqTW93VUlYZmtBbVpzV2lKdVloOWYzU3o3NFdpT2FNQVFSTGtISFY4R19xakNTUzNWMDhWSXE3cXE4VlRrWG91dEw5N2ROUFN3Z19rb3pxQWZZdVhUUmVRaVc2bzUzLU1pX24wdHZnM2VCLWtZeEFwc0t2eGROQzlURGZJakpMUHpLc1VtUFEtc1c0ZHFUbU9xY0E0SzljUmJYb3BMcmN3ck05N3VxdWw5d0hmT1J3d0tVcFFnQmQ5MTBoZE7SAf8BQVVfeXFMTUFqQTV4Y2Rmb3c1X245RFV0UzUwNlA5MEFEWUlITzViRjVaT2JhR2hEOHZJcGIyREJxM184OU8wZVl4S0JuOVBYb1VyUWlmbElsVG9FeVZfeGpINUt6R2Fydlc3VUlpUGV3QmMzMFlwRWt5ZkNMM3lnaUUzeVJxZnE1dHZvbU1wcU5paF9lNHRXR29SWW1MMmxVZXFYR1Q0RmNUSlQxeHJGaFp5ZkpDZXFJaXgyLTBpbVNUMVEwX0RJbjN2M0NDUlo5elZCR2pZRVh2RlhUdHBQb054RUNIREJiYmpud0h0QlZnaWNDYlhlS1VjeW5DVl92bElrTFJF?oc=5",
-   "fuente": "Infobae",
-   "fecha": "2026-11-14T16:48:00.000Z"
-  },
-  {
-   "titulo": "Expertos en derecho tributario piden ajustes en la Ley de rescate económico",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNX2w2VFU4NEZadTFtd1F4dV9wbHZnQWRRcDA0a01wQVBHam5aMHZ5X2FtNlpKdTlOdlpWOXRVNGZCQURQLThvZVlkLUJpLTJVOUVTMW1BNFB6VlZDcTNhTTRJSm9mWjEtajEtVmx5MUtqR2RuTlZEeUhNSkFFTFJOZnhKakRJbFFXLWZJZVFDdGJwcEY3ZmJoSlZnSjVOM2daeVN1dmNnV3FyN19qTWY4NVBUVkZxZWZDT3J2clhOV3YydEk?oc=5",
-   "fuente": "Forbes Colombia",
-   "fecha": "2026-11-14T15:17:43.000Z"
-  },
-  {
-   "titulo": "Ley de ajuste fiscal: No tocar el IVA ni sobrecargar las empresas, pero sí ajuste al Estado",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZUlzdGtjVzA3Yks4akZxcUI0SXRRanU1X1RmWjZ5MVlncW5nd3hGQzdJNnFqeVhyY21nSF9QZVM0em1rU21Sa2tfRzJFMEFfWERPT3BSSTk4UG9uNHpOMkQ5cF9sUDdwcjhNZnhjTkJTTmNRaC05OC0zNnkxbWdSVnFaVVIwV24tQjNJU0lhS1NNWFN4M0JZWldjWUVXc2tKV0VqMHpGQzJXcnlTUmRpMVE4YWZJRnZDMUZha2tBRGRWcU02c3VrWUdn?oc=5",
-   "fuente": "El Nuevo Siglo",
-   "fecha": "2026-11-14T06:00:01.000Z"
-  },
-  {
-   "titulo": "Con ley de rescate, el Gobierno se aprieta el cinturón, pero los hogares también",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTlhzcWkxRFIxeGYwS2Jjdjl4cU9SN2owQnNGUXlaOHBpYkdPWDhnYUtEU0NoM0hhT0ZjaWxjalByMlVSYUJsNnlaZlBXbHdPVXFuMllYOXJ4Q3FOY2RlRGVMN0E3c1Voa295VGZFckQ3RGNZblFVZU04aHhrTTd4R3RJRFdaSE4xTHdXTkNHRnJQOUNCV2tLV0dfUFNRZ1d1cXdsQW5kdkxJSEhrb3U3YzJXNXFVbi1iNDloYUdxNXI4N2Q5ZzBPcGhaM3c0WFRSNG5hRG5WQmjSAd4BQVVfeXFMT3RrWXlzNTJmUGxZS3J3SnR4R09Ld0FHM2pua29HN3IwTmVTeVBtX0o4bVUyWWROWjA1UjhZbHA0NXFfam9QdlNCT3YyMEFmd2xPVWYtY1VpN0ZmZHowaEhVVTJpYllNbG9tdTVPMzd6MGVNSmpZX1VuX0s0UU01UlYtTW9WOWVxRmFBQWR6aWYxVEhKb09rVTlpNXdtY2Zvd2EyRkVjU1FvQ080dWZPUGlQcTEyZEhGb0VWajE0LTcxZjhOSFlnMER5Q2lqQ1dOV05oaDBUZTN0N0ZWNHF3?oc=5",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-14T04:55:18.000Z"
-  },
-  {
-   "titulo": "22.026 hogares de Cundinamarca recibirán pagos de Renta Ciudadana y Devolución del IVA",
-   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5CRU1vTUJIRXVCbUx1RVF4RENqelEzbWh0aVUtMjZDem9paDZua0loTGxYVloxc2pLcHhINzFPMlFnTXdacGZIUENB?oc=5",
-   "fuente": "Soacha Ilustrada",
-   "fecha": "2026-11-14T04:13:25.000Z"
   }
  ]
 }
