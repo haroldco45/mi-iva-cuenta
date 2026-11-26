@@ -1,6 +1,60 @@
 {
- "actualizado": "2026-11-25T20:17:51.563Z",
+ "actualizado": "2026-11-26T02:56:58.508Z",
  "noticias": [
+  {
+   "titulo": "Anato pide mantener exención del IVA al turismo receptivo en la Ley de Rescate - Emisora Atlántico",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOekZtdm9PZUdmUS1LUjBHa0p0MkFxN1ZfTVQ0bkxzVVRCc2ZyLUxWYk9BSnFnVjVBQzFsa3lwMTRmMkVPNmpPUWtha2dreTI1ZWtFSGZGVkJMeVR6dkIzOXN6RDJGb2g0SjE3X1ZDMTZMY2F3TmNDdHRBdkpwN1BoSWdBcHhqWVZIYzRwLVA2LWhrcXA0V1RXSlFJV3NOb3Zid2lXMTBkQXVRRkY5UUlzSy1hVUJTU0tDZ0FhNNIBxAFBVV95cUxPZ3JLU2FDOVMzb0VDei1TV1BFMVg0a0EwZzZacXB3UERMVGVnVlNqZ1ZFUHRCQ2FjSmQ0LU9HSWl1S0JHMHBvWkFTWFlPRkstRGtpaTBtMlg1U0ZxSEdNSHBPNVYxV0tzSzZENGZTQWRCSTV5NGg5SHExd2VkS25OdU9hT0hkLW9YMkpWSDV0RXR4SzB1ejJqQ2lzZFM3MHEwMWNTcF9CeC1tNG5pOUhCbG5mNHNCWU1lMGpxMFhySkpSQ21s?oc=5",
+   "fuente": "Emisora Atlántico 1070 AM",
+   "fecha": "2026-11-26T01:35:26.000Z"
+  },
+  {
+   "titulo": "Oposición presenta ponencia alternativa a la ley de rescate económico",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQS0NEczdZZjJUeEc5b3NhMnFvUlBNWXI0RHZXZVNrakVzdkhLZFJFYTVETWl1ZTVNRUN5MnAyT2pIQ3MtTHNWU1FyTTFWMl82c0NTYzBFZWp6OHBnT3hlWXllRTR1WVg3cXVUSWpfMTItcnpCY3d0S09ucHJsSGtqWmdzMF9OU0hIbm5BTVdGdVNGZnNRckFpZXAtbVBidmxWLTNn0gGoAUFVX3lxTE4tdndfLVdwQnVaSml5Zk9JVkx5VW1WQWlDZUpqYnBXOWlUcGJsTlpjRW9pQ01tX1U3RUoyRG1pbFRvbWVYeEN6SjU4b2JPSlAwV1VuallvQUN2eVk1RkF4TEJLQWU3RDZULVRoelJua1FxYkNfbWZPcUctWVZzd0JPUjF3Nkl3TmhMNDdXa1NwemdtX1E0UkVMTFpEVTI2S1N6c2tEVkk0Qg?oc=5",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-26T00:31:51.000Z"
+  },
+  {
+   "titulo": "Anato pide exención del IVA a servicios turísticos en la ley de ajuste fiscal: ¿por qué?",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNlYtdGxtVUEtaUZHVm8zbTc5R1p0U0lBOVJacFd5Y1R6NTU1ZHNvczQwUGlqT2VkQ1J0QUYySW5vR1gxQ01iaWRVRXBraG5qTlFITnZFTzNzbHJyVW5HdVp0X0w0bzFpQ1AzMmxpSW9QRTdvVkZBUEJBUlZTelhvLU5pdHZWVG80NXpyUkw4WS1OYTAzWjZkMDNrWWpFNjE1c2V2QWhBVmtZWnF0bnp2UmRKSmpjVm4wY2l5dlVRUWtpZ9IB1gFBVV95cUxONGlXMy1XQjdULU1fQVpRN0dHSzBuVkJaeFduLURyYkE1MUZrbVVTY2xhQ1RvLWt4Q2trWHdvVVhuQzAxcWdROS1icU1zckxSRU95MnF4OTZhS0s3Vl9Zck45OFB0MS1fSXpfdXE2N0JhVUhTUnJaSUZVSHk2T1ZmS2xlM2FfanZYaHY1dWNsMWpUdjlSbkFockpyYk9KVUJydlhKYVZEMVdGU0lpaTVWZHB2VHl2dVpEV3I1ZmdiSHZITGdBZXUwOGtZVURPVWtDVVFDai1R?oc=5",
+   "fuente": "El Espectador",
+   "fecha": "2026-11-25T19:53:04.000Z"
+  },
+  {
+   "titulo": "ANATO hace un llamado al Gobierno para mantener la exención del IVA al turismo receptivo en medio del debate de la Ley de Rescate",
+   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQcGdLbEhHRlN5OWh5aVAtQzl5TUdEQkYyRzB2aGVLbWpxUEZqMTNBUU5nbk1VMTBrRWpNaFF0clhOYlFTaTFydzl4OEdlY0hBTzJUQ3NNOGlfUkl6R09pRUZxNjlURHRmX0gxNGtRbGI0bXMySG1NMHFOZGtWcXdrS3pDT0ZhbXZVZG82TzJ4NHVNSkxnc2pKTGJ5ak1ieFg5Q1NkNWxCeTZ6dktINWJuU0JldGFpQUE4TEhlalZEeHEzNTQ5ZjdqeXpuX05idW05am10ZGNqZlNBSHJPRWFkN09GQy1rU1l4WVRteng4bzRkeEd0MGMtVnVKZVRjODZfYVJLNWxlYkk4UTVOd2NBMmttaHVWaEZxSFJfNNIBogJBVV95cUxQbUtWZHd6aThFcmI2WlE1NGZiT2wxWUVEcGxGdDVsM2taN0lGLUF3UkFIU3dRcEE1ZlJUbmp6UUZQMDA0WlVLY3lFcS1CN2VacVNkYlNOSjJJdUU5YjVUSlh3TkpqSW5VeV9FRmsxSU15UWIyVFN5MElnRVpXYlBwS1pBMUlySEU4YkFTckpoajZxQlk2WndLVndfa2FRaVBpNEFqT3JqeUxIYWI1VHZ0eFl3TWp1cWdQSzdabW5ldUZodlE0bkp0VkxIdGZhZ1J0ci1SV1VUaU43MWZLY3B5STVWZXpqZk1XbFU3anRsdGQ4d1h1bGFmdjhmeUd3QmlvZ25pZEVPUEVOb2xPdUhsZVVSeUJlZnVtWl82dmtSVnhLZw?oc=5",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-25T16:35:16.000Z"
+  },
+  {
+   "titulo": "ANATO pide mantener la exención de IVA al turismo receptivo para proteger la competitividad del país",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNazdkczZjTTI1MFVjR0htZ1pKWmpmeHJQSktVVEg5cS1pU1BiMTVLT2xTdTMzSzdTV3RkelBnTlVfc3IzZVJFcFk5b0NmdmhHbjhUTWJueVFWT2gtR2c5M0ZFQVROdlVaRzFQc1pmOEJsZUJUY2Z4ZFNESFJhV3VjbV8tVVRwc3BCZ3REbkVncmhUZUlhNUtlMWZzc2N1c3FSNlppbDJvVTdLaVpMYVJvbDJFdFhWTjJDYVNidDEtcThkVDRPaGc0ZzZwYTd3cnFI?oc=5",
+   "fuente": "ABC Economía",
+   "fecha": "2026-11-25T15:37:47.000Z"
+  },
+  {
+   "titulo": "Anato pidió mantener la exención de IVA al turismo receptivo en la Ley de Rescate",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbEJUTEZxR1k0U1laUGR3bVFJYVpreWRxZWpqOUxDLWtUU2Y4X19zQ2QtcTNrQ1ZiWWRnbzFnX1dCSVNEbFBqb2VLSVRLRHlEa1dZSnd4cEZFNmI2Q0FwNXBvRENSbkNjUlZaNUxUYnNrdEhpcG9vVDdDRlo5eHRtc2tmY0VscldOeG1tc2RpVUNLeHctdzhBdW5uOFoxVll2V0FkUzA4TVlEdjZiSFlFdldR?oc=5",
+   "fuente": "Zona Cero",
+   "fecha": "2026-11-25T15:19:00.000Z"
+  },
+  {
+   "titulo": "Boletas de cine se podrían ver afectadas por el IVA del 19 %: así sería el proyecto de ley",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNS21UY1VlcG5WYkRLRFViNV9IU1lsZWhWeE5yMTJVVzI5S18zTVVVZUlTRUh4aE5oV3Brc29jaEJObGNQSkhROXVnV3NWRFJPQzFpWWVJMnhlTk9UeUxsQi1MU3VyLUhPY2hMZzVmdkJVRExxa2hyZV9SdFExVjh6STFaSnFsOUFRcXZhNlVMQWNlRUpYMy1NdGhMY2JDa0VnMlV1T2dybWhvY2dET0JxX3BUTFBTZTZ1Wk1abndzRm1XYWF5WXRldVBGN09ZRmVfTUpBU2RhX3FoRmt0Z3VwdTBxMNIB6AFBVV95cUxQVWVmSE5ndlZ1Z1FaYmNvWC1nMXhla3E0a25qZ2pHbDdmejh3UVFoMEcwQXZKV0FzVjBaYl9uZ0d4VXoxVDhTbnVucXdzU1FuTXBwSVBwY0ctRk9YalpNM0tGZGxXeldBcUpidU5HNVBJN1JuLVJ4TXJQTjliM3R3eC0tZlhhWkdsWFpScFNuZnBmaVZXTTczMTRFY0ViTGx2elYyOC1FTlVBc0h5RHNJUWZndXEtZXoxSS03NEVPNEVkRlVJVHQtZE40WFJfRmlQVGRZcFc5a3ZmUVhETXk4d2MxNTVKUlk3?oc=5",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-25T14:06:20.000Z"
+  },
+  {
+   "titulo": "Poner IVA del 19% a boletas de cine pondría en riesgo 5.800 empleos y alejaría a 25 millones de espectadores, advierte el sector | El Colombiano",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaW1oTk5rZW9Ka3F1eHpsSHBpQ2ZOYXhXQzYxdTNlajY0b2ROS3Y5OFdWSnJWTE1jZFBiemN3em5VUjN2N05VdF9qUHpoRWNkYmZHNkVGTTRRaV80RlhkUVVQZ1lINmpVV3VBUm1CRFV1cnk3VkF3RVZlVl8xWXZoZzJsVU82eUlieEtKZUJFV0RnUUdhVk9fWTRKTEVuQlZkTHBMMklyLWxuenlDUWt5QWo2aDRLd1HSAbwBQVVfeXFMTW84VFNmc0ZOUmVLQTZPY0hmZUNDQkVUUU9pcU5Rek1ybjU2TWZJN0E4bVpPSk9jS0tQb0hOMkducFpTUExwUmFKck9rTkxybDV0VUxMNVNVRU1IRUQwSTJDUTE2RWNabnZzZHNmbXlQZ0IzWHc0NU9GUnlvZWVPajF5NWV4M1FTWjlxb2dsY3ZjeTVVUWdEd0dSa3duNExrSUFrd2psZnliZ29SUGpUUm85clZ0ajdMNnhPNlE?oc=5",
+   "fuente": "El Colombiano",
+   "fecha": "2026-11-25T11:30:30.000Z"
+  },
+  {
+   "titulo": "¿Cuánto subiría la gasolina con la Ley de Rescate Económico? Gremios alertan sobre su encarecimiento",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbjlYalpINk5GWjhvS08xSUhIdzZDa0tZbmZUYW1DdnEzZm1aRDE4YUxtMU5mTEhFeHRPVFB5VEtxQ2tId3hUQlFUcW1NUm9CejRQZ0tHWWdFQ0RGR1ZQNlBsbUNVakxIVFNlUmNnd0pGZHVmZXBSaTZxbmdTLVBwTDZ4TjcwNl9vbUlGTXdZVC1TR1BUMGcyZzdoNWNvWEtZVEJGbGFieUhZWXh6OExWSDlDaw?oc=5",
+   "fuente": "La Opinión Cúcuta",
+   "fecha": "2026-11-25T09:00:00.000Z"
+  },
   {
    "titulo": "Ley de Rescate Económico también impacta a los viveros, quienes piden ser excluidos del IVA",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNVlSOElCNFlXMURaWThBaDUxUENFcTN0SUdvaFMtdjRYMDMwS2VaVjBJSlhrT2NnRGVkNzhmX0VWVzBRaHNuRWVNdUVQMy1UWWdIMm9QQkx2MXZ2UW5XekxoRXFlVnQwbms3Z3MzNDZPNmNPbjUyZ2pFLXpER2cwbUlGWGFjS0dHVnZqdE0zcVZSZW9NTHgzNFMwOEdUTjd4T3AyYW8xZzlhNVI3Qmd4NzI0VUhXVEVoQ1Jla2pCX2VPSEZmSXVab21yWGNUUmhvckVCaWxRNXZXOEwzVjY0Q24wbldPUFRM0gHuAUFVX3lxTFBYeC1DU0huWGtkcnhJMEgzVEw2dmNxT2xsaHFkOEp1MHdqVlNBWTQ3M2E1ZDNLRURfZS1yRFpkWHpEYlQ1aEYza2Y3WHB4WG5ycDlGOGRMdUstQzE5aEtsNEhuOU95bS1OVG41RzhGX0J4aTVUZnhISFlpbXptWnE0N2ptSmdyQ0tQT0ZnVGF1TVRBNHBORm1UeWFkOTFCTUFfOXllc0FCb0hpMXdXeDRXMmhJcFlXOXVkQng2ajhFdGxhQXFhSDFvdHQyYy1oSW5GRko1VGdoVldLamctTThzUGI1X1dVU0xnY0MxZWc?oc=5",
@@ -12,6 +66,12 @@
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNVlSOElCNFlXMURaWThBaDUxUENFcTN0SUdvaFMtdjRYMDMwS2VaVjBJSlhrT2NnRGVkNzhmX0VWVzBRaHNuRWVNdUVQMy1UWWdIMm9QQkx2MXZ2UW5XekxoRXFlVnQwbms3Z3MzNDZPNmNPbjUyZ2pFLXpER2cwbUlGWGFjS0dHVnZqdE0zcVZSZW9NTHgzNFMwOEdUTjd4T3AyYW8xZzlhNVI3Qmd4NzI0VUhXVEVoQ1Jla2pCX2VPSEZmSXVab21yWGNUUmhvckVCaWxRNXZXOEwzVjY0Q24wbldPUFRM0gHuAUFVX3lxTFBYeC1DU0huWGtkcnhJMEgzVEw2dmNxT2xsaHFkOEp1MHdqVlNBWTQ3M2E1ZDNLRURfZS1yRFpkWHpEYlQ1aEYza2Y3WHB4WG5ycDlGOGRMdUstQzE5aEtsNEhuOU95bS1OVG41RzhGX0J4aTVUZnhISFlpbXptWnE0N2ptSmdyQ0tQT0ZnVGF1TVRBNHBORm1UeWFkOTFCTUFfOXllc0FCb0hpMXdXeDRXMmhJcFlXOXVkQng2ajhFdGxhQXFhSDFvdHQyYy1oSW5GRko1VGdoVldLamctTThzUGI1X1dVU0xnY0MxZWc?oc=5",
    "fuente": "Revista Semana",
    "fecha": "2026-11-24T21:19:42.000Z"
+  },
+  {
+   "titulo": "Incremento del IVA arriesgaría viveros y $250.000 millones",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSHhNUmY2NVhtUGFOckVGTV8zUi1YMFFKSFFjMlVWWWtqc0h6SGVYMi13R21zRlF2OXNibnhWcUM0d1U2eVNQMmFsYXAybmVsalhaRTBqblhNeEJEdXgtdXoxN3FBVk1pWWRyWklZUFE1R09BZ21qYVRaSTZfOTg1V1ZlRUZEZUFnRUFyU2p3NXRod1NTMDBQNENEMHphbGx4dVRTN1V6a2o5RWVzREt2N2h6cFFUbnR4MHlhOUVGOE5rUU41WmZCdVhJMEY?oc=5",
+   "fuente": "CONtexto ganadero",
+   "fecha": "2026-11-24T20:36:19.000Z"
   },
   {
    "titulo": "¿Boletas de cine con IVA del 19 % y cerveza más cara? Así fue la primera audiencia de la Ley de Rescate",
@@ -26,16 +86,46 @@
    "fecha": "2026-11-24T15:46:51.000Z"
   },
   {
+   "titulo": "Precio de la gasolina en Colombia podría subir hasta 30 % por la Ley de Rescate: ¿cuánto costaría el galón?",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNR3J2eGR4Y1FnVDlHd2VQd3JOMXA2aUxnUTFtaEFNWk9HYkE2X1I1eEx6UVp1YURCc0lydzRZdU1JalF3YmFwMHl4SmEzNkVGeWdYRGROMEVCN2QyeHE0ZVFWYzF6NHZOcUxDdlgtN1BybV9mYTI5U0o4NDBIbHVsRENTWm5VWkVWdDBCUmN5eDNXV051eTRRLVY5bjZXSG9DSHR5RmRMb1QzVTZoR0lpeTlRUVNpb3N1TE1FWURCNzR5c1JSV001OGJ5RV9HUWRpMDNld1dPMnBGNWM1YUdZVTN0QW9GbjFOZmh2cG1KdTV1MkM0ejBSONIB_gFBVV95cUxOM05KUU51emxYb2I2YmhqRHJlcFZ2NFZjcVE5TWN5UFhYTDlDcEYwZ3ZuaTRwTl9sVVRsei1mWGZ5MXFQVllDODZQTW1KYlF4bXRZdHI0NVBBOWpZYUNYN3JLWDUxX2E1NHRlTzJlMy1vWWIyd1VyalRheEVnZ1plR0pfLU45WlV3Y2Y1c3NBUC1JU29oUklKbEVNUGd2V3Y1ZkYxZ3h4Y2tUQTAtVEQtSE9pQmFzMzRyNzhHNTRZRlNUU3BqRTdVeFVfWlVXUzRxNzBwdDdmamtDQXB4WUJ6dXQ5NkhUcXYyN0RQN2FVdjZWaC1ScFo1Z0tLV2lpdw?oc=5",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-24T15:34:48.000Z"
+  },
+  {
    "titulo": "Partido Conservador pone límites a la ley de rescate económico: rechaza IVA a la canasta familiar, internet y medicina prepagada",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNM3F1QXNyaDdjMjV3MkxwYlRsQUpONDhSMDE1N3hKWGJiZzVpSkZMNjNaRzB6SVRmVEx3ZkxMcG8yajRYdzk0UWZtMy1CZGEzVWNxSUg5WkgybGlLclJwQTNjMXQ3TmZndlRrUnQtRzd1bER0Z3IzR2RkT2VEM0VnZmZfRTd6QldNRGlfVHZkXzkxWXh2ZkI0cXpZYjQ0TTlEMG9jUmpoWHdWa2dHa1F4VG96ZkdMZWliM083Smx3SUtJTFRCTGxB?oc=5",
    "fuente": "Ecos del Combeima",
    "fecha": "2026-11-24T14:30:17.000Z"
   },
   {
+   "titulo": "Gasolina en Colombia podría superar los $21.000 el galón por «Ley de Rescate»",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONFEwUElsZmtyYTQ5dVZrWTJuQVg4V2k2eEl0d19FbGFuRjVTR3VaS3psVXQwRkEzR0dfUEVyOHN0OVhqMmRDNk5RLTFFNUUzeWZ1dGVmaUZSU3FLOGtRdzQ5VE9uVlNyaG9mcHB0aUdIZ05NUUhrOVhYV1dLSWhiRU9BU0N0andScHNUQ0F5bjJWX0dITUU3dWIzOGR2dy0xUzdpdGVwaDV1X3Et?oc=5",
+   "fuente": "El Irreverente",
+   "fecha": "2026-11-24T13:31:44.000Z"
+  },
+  {
+   "titulo": "Gasolina podría subir hasta $4.906 por galón en Colombia para 2029 con la Ley de Rescate Económico",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPblFxNTkzMThNRmsxUmpHZ0p3N1FVZS1aR3dtMVFJb1FNUFR4eGNBOUl3eWlfLVJ0OHlIRzdKdzJSSnVhRC16cE95N1ZVYzU1b0ZyWGc4WGRLS0Nzd0c1dnNROHNCRE9fSHRnV3JWUEJXTjRUZmcxalNBQVhXSG96Z1BDc25rU3dqczhZUnlEM3VIWnBMSzJCSTNtTUlpR2FPWjJUcHBoUkPSAagBQVVfeXFMTVJvZ3NhdXhkRUpqZUdmWTdCNzVZS0xQUWVTSVZ3eXVsLWJrNzRNdjBpYWtjb2prT0w3SWFWbC1SbzVlcmRqdnRReDhuVmstT0pXX0toM0o1cktRa25IYm9QQjBPN2MzQ01hMFlQS3JqeHU1UWZqdGI5SS1fSlN6cTBsQktVWjA2R1pHWUZqQnR6QkpuSkprWVhfOE1ZbXkydFlfeHZSdXdK?oc=5",
+   "fuente": "La FM",
+   "fecha": "2026-11-24T12:44:38.000Z"
+  },
+  {
    "titulo": "Conservadores piden sacar al agro del IVA en la ley de rescate económico; el Pacto anuncia oposición",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNM29GTXJDNjBGSlh6d0lfOGltekZHbkZjYVJ1ejhiazNGRkZFU21QekpjTjYwZl9MVEdwXzZ4M3dndXhuLU5DQ0J4RTVUMlBYQ1lNY09IcHJFODlBazhUUVhtWGdEamhpRk42TzJ2MFZhWFhmWEw4OGlsVXdDMEQwUV84U3pvc3RhUE13d2lpNmxBVnBMY3JkSS1HRC1kTlpzdXNTSWtocGpjQmZBVnpITnRPa1Vtem5rT1A1X0xzVWlfekdHU2tZ?oc=5",
    "fuente": "Ecos del Combeima",
    "fecha": "2026-11-24T12:24:54.000Z"
+  },
+  {
+   "titulo": "Advierten que la gasolina podría aumentar hasta un 30% por la Ley de Rescate Económico",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMEViTDR0WlBWWkc0eGlzUEw1ZThQbi1OMlNBWEVFMGlhclllbGY1WUwySWRSOUFkSk9fY01uajRaT0JSLS1XcWc5NmJhcnpMQ3Q4bHY1am5hMDlQZkswQk5VTGF2WFdhZWxBNnROek1iUzBJX25VeWRDSkplVDNqNEg2eVl0eTBTUEZMY2JUdw?oc=5",
+   "fuente": "Surtidores LATAM",
+   "fecha": "2026-11-24T11:07:24.000Z"
+  },
+  {
+   "titulo": "CARF advierte que la Ley de Rescate Económico no estabilizaría la deuda pública de Colombia sin ajustes adicionales",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTHZocUFhSUpGbUFTZE9CamF3U3FGUWNzb3lJcnRVNjJyQmFCc1N6aW5JQW96OHdEVzAzYWRXa2Rhdk9uZGlqc25vc1lmekhrVEJyZ0NaQndmWVJZdjBpeG9yczB6Q2JPenFDREZVTWNMUnpCZXhjSWlsZDYxcHE2WDg3MkNQdElqb25PQTlkNkU0NXBJSHByQmpjRU0tbE1weG4xbG9BXzRmaVBNOHdLSXE3TUliWnZxNWlZRFVYb3pmYzVQQzNFVHhHNDZOWEFQTXpST9IB2gFBVV95cUxQT2J3aERPUC1tODNuSHhPRVBWclJvS2Z5Y0RkMTVtd0czanRvSkktYWxSU3BfeXBYclJSczZMR0VRdTZhVFcxbVJwak8xMEhGOEZ0X3RNUElVZWpjZVFoRFJ6b2dOVFBKNDJxakNTMHhqLV82cVBGa043SnNtZmVNNUJWdW1aZEduRDl4YXBJRlRYZG1JMnRrVGg1eC1KSXJTbEpHdUIwNGplYVBEV0hQczNaak5xTFcxdTFodkF5NUIzZkR1MXZlZFc4OThIaC1zOEd1bTdRamltdw?oc=5",
+   "fuente": "Pulzo",
+   "fecha": "2026-11-24T10:37:29.000Z"
   },
   {
    "titulo": "Ley de rescate fiscal",
@@ -56,10 +146,22 @@
    "fecha": "2026-11-24T00:32:32.000Z"
   },
   {
+   "titulo": "“Ley de Rescate Económico hay que sacarla”: el mensaje inicial en la primera audiencia pública sobre el proyecto",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQLWxXbmdIWi01alNDU1Nhc1ZkVVhXejJqNEZ6VkxmN3B6VWFGTzIyQzB2VnpSckpQamticGRnbF9JakdzNGRTUGU3OGRDYjhibC1Bcjd6bm1PaEM0SXQzdVV0M25iSl9mbldVVVFNenZJbXlHQkdVNzdwM3BMTlItdE5YaEF5N1lScW1rQ1hQZUFST3R3YTB0c3FXSXFhTE5QSjJDN1JJTmc1c2FjQWJlYndKckVyZFdza2xzMFJ6SkthajRRbFVUU013MXlPLTlZdTFRVERPNHVPQ3Y2ZjRuWHRpUzlyMDduZkhTbWdacGFkaVFYZk9NRlc5X0huUVlhaFHSAYcCQVVfeXFMUDczZzVlMDhrLWFYYUVqWGwxd1U1UVM5a0J6S2RHeGw5NVhJaVlfb3RRMzJzX2lyNU1vSzBvWHZiY0l2NnE4T3BaWFpGeDBMeEF6alRrRkE0VTc4cHBRMEJYNmpHRE5LdmZyVXBhVFlNQWVFWno5MlRnMzF0cHFaRzFOblZoZEZON0JMRGlES2RLWW12TS03cTBPVlBxWENIZllJZS04a00xaG1TUjIwLTRGMWFsaGNUazM3eHNreFplRXE5UEVQTV9lcUlCT1VIY0EtV1FOSER0U1FHc2hmT0VVdGZCeG44Uno2Yk1ZdWtscjRRVHBxN2tnR2FoWXlQa1pGbnB4Zm8?oc=5",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-23T23:24:45.000Z"
+  },
+  {
    "titulo": "El sábado 28 de noviembre vence el pago de Renta Ciudadana y Devolución del IVA a beneficiarios",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYVUzUmdYTTFDSkNnd3hrdENpT2s3aFdQY05USnZYYUw1emhzaUt2M1NaTVY5TzFmMEMyS3JBUU1uUm1TTFZoTU5JRV9DbER5SVRncmZwUW1UNGgxMzlKQzZhMGJhS2ltOWpZTXBMdGZpZllnRWhyUmM2V0QxYVJUS3cxc0VCRUlGWlpTNEltT0txMUNXQks1bzFFREQzS085SVl3ejRrbko4MllIR3c?oc=5",
    "fuente": "Ayudas 10",
    "fecha": "2026-11-23T20:14:36.000Z"
+  },
+  {
+   "titulo": "Estaciones de servicio advierten que la gasolina podría subir hasta 30% por ley de rescate",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOem5KOTJJbG5nMFcwcjBzajZIdWlOUm9FdngxUVIxR3Znd01fV1pXQUtwODRRV1lmeGZJOVgxRDZHanpHMjZPZ2hyUXdNQTNmWGRmbFYxNWNWQzZabmlBckphMlhwUEM1Y3hGUDlsU2kzQ2JJOXp5NlQtMG9oUUdLNjBnQVlaSlpGMkhrWDcxV0Z2NjVwU04ySThVZTVjb21GQUMyMVk5aF9PWFJaTDRyUThkSVpqT18tWGxYZ1Z4RDhkTWd6dWJoNk40czR4Z9IBzgFBVV95cUxQNXVlQVp3a0JVVEF0U3VNcXBBV0hXZFU5MXVRdFozY2YwZzBIUmdFQV90enlVR01LWUZXOG5za3F0UzhHOXdIWl9kc3AyMWxaN0JBc3pWOVBaLUdkZ3hMczA1eTJjd0xyc2FqekQyc2QyamJsZkNWMV9JdE1uZ3lqeko3THRmWWlhYlZVZWpEMEtpQ0t0OG9KQTVEZGNWbW1VczR0RzZUbzRWQnp2VkpLcE1aeF94ek9xTnBsWF9PQWNmVHRVdXpsNzRNSTFqQQ?oc=5",
+   "fuente": "LaRepublica.co",
+   "fecha": "2026-11-23T19:45:40.000Z"
   },
   {
    "titulo": "Ley de Rescate elevaría el precio de la gasolina, ¿cuánto subiría el costo del galón? | El Colombiano",
@@ -68,10 +170,28 @@
    "fecha": "2026-11-23T18:45:00.000Z"
   },
   {
+   "titulo": "Álvaro Uribe propone eliminar impuesto al patrimonio y reducir el de dividendos: sus apuestas para la Ley de Rescate Económico",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPTk95RlBodWprLW9vVGtmWlFBN0ZqUlQ2aDFYSkxkVVVRRmVucHZJTjhybnVuSnZOWVBuWXZQUkNrTVRDcE92R3VmNkZtMENpc29NeEZtNER2NUdaS0FGRWkxc1B6NldPZUlhb1BDM2FQNmNSUmFOemJzN1lySVlob3AtRkxWQWpSRXpOdEh3SVEta29MUkxRd0NFbDZZb1Qwd3VTVW8tcVoxOVZrNjVrUktJcUF4My00OWsxcUFFaGhNTFNFUE5NaFpsTTBNUTFtR1NWalQ3dktKeUM3WmFvelhQTHhLZWtmaWlXSFJfM1M4eklnTS1jTzdnTXJaczRLanVzUNIBigJBVV95cUxNWHYtLTJJY1ZoTEQ3amRmOTlqU01HZWVpcnMtb3hEUGE5RFJVLVNOSUVHb1NONVJhalN2Y2pUQklVUnFQZHJzWlZvekU5UndJeWtkMk1XVWwySDg2VnFoU3lKc05KN3RsQ1ZUSGJTU2xwR2tQTXp4SHRtQVZ2MFJ5dXRFRV9kQVF4c0JIRTdSdVlqMk9VRnJNMmlXZnI1aERYblJmQWh2OHV6R3dJTVN0RGVBRHd1Rlk0bnZCRXNjMTVSd2k3MWJwaHhxLVFrQnRYLTZZY1U2LVFydjhmT2JycFFwdF9pa3VSakdrOG5BYWhvM2gzQl9QNnN1SDR3ZktPZXJxdzExOWFoQQ?oc=5",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-23T18:24:10.000Z"
+  },
+  {
+   "titulo": "Somos Uno advierte que la Ley de Rescate podría elevar el precio de la gasolina hasta 30%",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcWpVYTVLRld4YjBnOG1ZRVFfNlVUVmRtYUlONkpvei12Y25oaWxmaHNUbUtubUQ5c19qVHdOVEM1UlJtaTZDSDRVaV96b0RqS0ZoZ2w2NGkydDBoRnFKUDFaWk5FQlpQbWZ4eGQzcm9aREVzY2phc0piU0pkYjR0OGl1Q2dSb0FQSnpBUF94TFp6dE9wTlVkclFOczhUYmlyalNGUWs5SWFMRTZaeUEwM3JDdkxTWUhsYlpudNIBwgFBVV95cUxOQlBGbG1PLVd0UWw1RmdsNnhvbmY2cm9NNERCVWVxNWFoM0dkNDBqNlU5amZKUTZrajRyak5JOGdXaWFDNVUtSVRkUWFWM0xfSVVYNUZFWFhacGRrY2prdFRzY2FvZ0dtQlowQmF1dUE4b1hUNTJsM21hcC0tUGtHR3U0ZUo2cmtRUXlHSVQ5R3RzNG1YWHdKdFdOdmM4RmZtYWxTQjJYZFR2dndRZkFKbXZuRFZMTDBFeEs0a00tVjltUQ?oc=5",
+   "fuente": "Canal 1 En vivo",
+   "fecha": "2026-11-23T18:13:06.000Z"
+  },
+  {
    "titulo": "Gasolina podría subir con la Ley de Rescate: ¿qué dicen las estaciones de servicio?",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVUJkOHgxam1sSG5QQW16RGxWcWNwUjlaVmJXT3E4dWdjSHRJNkpZNjBkeWhGRDktdWgyYVJudUVmZjREZGRINzc3dXI4Wk5BODRjeGxpd0JlaDQwMVFUempuTVg4bUltVU5KTTh2Z1hSNVBRc1BwS3pxdWlKcVRwTEpNRm5sN3pFcFc5anBXM2dicC10QUt6bExERXdsM2pCaExCOTdNUTZzUjNVVjR3SEo4NTEydFZscHRv0gHPAUFVX3lxTE1TUU5qeDBTZHF0VjNLRDhfTnY1TWNfMmhTVkVLQndQdUVKcW5abE9yMU41eVIxczZOb0FHa3dhRkV3Z1ZHV1N0ekdpLUxLZktUSzAtTUd2elR1eEMwVmZZTEJhREl0MEh0dEhINlBwaE92c3NFeDFNVl9qNXJ0MnQ5ZWtHNjBnTG1yS1ItYVlkRXNKVzJhQWJfajUyWTk2U3ZwVkg1RkpWZElxaWNxQlFBVlQ0TXd3S3c2V1BtZ3pjWGRYajB1b0h6QVVodkNIVQ?oc=5",
    "fuente": "El Espectador",
    "fecha": "2026-11-23T17:29:49.000Z"
+  },
+  {
+   "titulo": "Centro Democrático oficializó su propuesta alternativa para la ley de rescate: estas son las claves",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSy1GOHEzVm1VY2xycXc0SktNdHNxczBWVWNOVzV4X2hpQTZrYzBnTDRBZmx4VjhlTGtNRWQwd0JkZEZvamd3Smt6aU5TMjBlVGVJRVI2Z3p4eFpXU0RaTTJ5TkZpcWU5WTFicmVIR2Jham5vb3NoRkZGdzZwTnhTa3NBbVk2RnRNeXd0b3E4aFp1dk5OX0FkRHdmSWxNOV9WYnVjR09ZMjZlTWlWLVY2ZnBxN0RndFBOREdRajJObkl1U3R6N3lwQU41UG1TQdIB4gFBVV95cUxPTTVrdy1EMEZ1S1lwVjNRclpxaTZ6bGNBWm5BVFZxbGFkMVZrVFR5eTI0Rk5mZmtEVjA1ajczQUF6NWJkWU4xbmFhWENrNjQ5ZWFET3c1eXdrRmJfQjBMdzAzX2U4enNMSWYzV3FleElnVGNUZ1pGc0Foa3J5UWNSNFNhVGpoMDRtUG4yX0N6b0JJbHk1aWNnOU0wbGZsV056aE1xMHpST0FZRGJFaEhPdTFtb1RBUlFWNmhWTUc1TWxtNjZocnZlQnpvd09OdklDa2hOUWJIM0JJTzdJYUJTZWxB?oc=5",
+   "fuente": "Caracol Radio",
+   "fecha": "2026-11-23T17:10:25.000Z"
   },
   {
    "titulo": "Ley de Rescate Económico: impacto en las personas naturales",
@@ -80,9 +200,21 @@
    "fecha": "2026-11-23T17:05:00.000Z"
   },
   {
+   "titulo": "Centro Democrático presenta contrapropuesta a Ley de Rescate Fiscal",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWlhrQ0dJaVVwLVVZN0lBQWpPM3ZPQjRVa0o5ZHVJRDExdVpLck5HUG4yRk5EMnNPX01aSGhuSzRMU0JPMFp0RVNrVEpfdU9CN3o1ZVZaX3NHZ1Z0ZFZUWnI4emtQU0hIRDNyVUZnTUc0VUk0Qm1KRG4yYXZhTjZLSkFSVDFCWkxvclF2MHdFX0w3aXNXN1YtSW1uMHA4OXJyc3NtQlJ0T2tzUQ?oc=5",
+   "fuente": "El Nuevo Siglo",
+   "fecha": "2026-11-23T16:50:15.000Z"
+  },
+  {
    "titulo": "SuperGIROS y SuRed: cómo consultar el giro de Renta Ciudadana e IVA",
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnTk1yUWFDU3AwXzBRS0NudWZYUDlmOGp4dGlDcEVsWXM4S3lwWXBtZ0FWZy1qb0tYSWhOWDE4a3V5bnI0MkFDanN0bG00dnhKcVNxeE9wa2VCRDRDVkEtRg?oc=5",
    "fuente": "Wintor ABC",
+   "fecha": "2026-11-23T08:00:00.000Z"
+  },
+  {
+   "titulo": "Proyecto de reforma tributaria 2026: análisis técnico de la Ley de Rescate Fiscal",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FSFVTZk1IMHB5S2RUOXZIakJCd2l6SXhqRmozaXBIWDBIWjVzZGFZY0s1cHN0LXprd3lsMndqVzR5eTdOLXJObzhuUldyQTZLVWVhYlZB?oc=5",
+   "fuente": "Actualícese",
    "fecha": "2026-11-23T08:00:00.000Z"
   },
   {
@@ -108,138 +240,6 @@
    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNMjBrZWkzam5ZOFFlY1pSN3RzMUo5ektmOHhuM3dQaVdjcEQyYkFyWkVZSXJGT2xQemljWlp3U254bk9EWGxBQzZzTWhLcHRZOHJrMFhlVUdUYlZDR0tWWlJNbWhBQWNvRDg5NHdRSEs1SUhvelFDc0tqN05TdHVwcnhrSWxhcmxaajN0b2NIdVBpTWpyV3NoNy01YzRLNUplUzlZSmN6QXM2eFVEV045bTNNYVBkRjlWVUhiNnBfMjg5bVdLUkpPRXpVRHdOWURoSHM2bEdTa21jUDBFaWNWNXUwS1UxLWdYbTBoWDJnYVdwQmExT2t0OXNR?oc=5",
    "fuente": "Vanguardia",
    "fecha": "2026-11-22T06:00:00.000Z"
-  },
-  {
-   "titulo": "¿De dónde saldrá la plata para llevar a buen puerto la Ley de Rescate Económico?",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT3kwOWJXRENJT1pXNlo2MFpuN2h5NHpFZGUxR2hDOXNYSkhqQUNFZGtSZW5FandXdTBFei1raF9ObFZLNVpkLVBMX2R2ajhrQ2xNY1RGQ0h4SVVlM0I3YnFMU3l2MHo0VHlzZzhnaTVyaVJybFpGNFVQV3oxa2w3YmxzUXJ3NVJ1TF95cVZfZVVYblllU2ZwSy1zV1NiRWdTUEZkSFdnaWVBNENtUDd2ZHI4a0JOZlZXRVhyLWF6czBqUQ?oc=5",
-   "fuente": "ELHERALDO.CO",
-   "fecha": "2026-11-22T03:11:34.000Z"
-  },
-  {
-   "titulo": "Colombia — Tributaria: Ocde pide quitar exenciones del IVA y bajar renta de empresas",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR3dmTXM3Vlc5aXFuR3BaX1BrYkt1UEZpdElES1V3WFlQR3JoYXRIWDdCTlczV2c4ckNnMWVpSVF0WUk1ZmFXbUdBOEFJTndvQVMzSW5zd3l4OVUxd2M5RS1QUXpITXBUTGhUcmVSaV9fX2pjczFGaVdDbFh6Rmx4cWVGR2xYUFY5bmFtQTNFYkdwblpqVnZfQU4xTDdmU2Uydlp0MjE2RjhmVFh0TElqNVhLUE50dkVmZlNneA?oc=5",
-   "fuente": "Prensa Mercosur",
-   "fecha": "2026-11-20T23:30:26.000Z"
-  },
-  {
-   "titulo": "Cuenta regresiva para el cobro de subsidios: vence plazo de Renta Ciudadana y Devolución del IVA",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLWJRQkJUNGZWbzRIeTRwSHlGZW4wR3RSdzBPaHBrcTQzeWpILVlWeTgtRS1aYVByRmpjbFN6bVN3em8tV2FERDhOVWlaS18wSV9ydHV3bXpfSGYzS3pzSEd3X3Bad2lxb0hsUlNucldVV0hfMkUyZjV5bmd3OWNwWEUwN1lQX1l0ZmdzX1g1YjJrWWZfTVFMUkpOUkxZS1pINktQUm5MM0s4YkUwb2prNUFBNTA?oc=5",
-   "fuente": "IFM Noticias",
-   "fecha": "2026-11-20T21:52:15.000Z"
-  },
-  {
-   "titulo": "Así será el trámite de la ley de rescate fiscal; Congreso espera votar el proyecto los primeros días de diciembre",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQNUdsbF9XQ0VWRFotV3djQ2JOWFlEb05HRTlTYlZmVTlCc2xJazBXRzlQbmN6Yk1fdzFHRkNrQjh0ZTNOUUpaekdCaVdVTnpPSGMzNHZ6SjFiVFg3bHNNYy04VmJkTV90Q2ZEU09pdFBaVVBqSU5kbjRRRGc5TEFoeGtYZ1ZTQmprZ1RFbjlaVXB2QXpSRnhyaEV5a2tIbGl2dkJmOF9Cd0h2cEhBLXlVOWpGYWFaVXlxYXlZaVpleFpyb3pjWXdlRmdlSUM4czBlQlpvOFQ3WXpxaVJRakZuSzd6TkU3bV8xWjk2N2t30gHzAUFVX3lxTFBlczhjN2ZaZVQzMEZCZkdfaDEySUx2b3VST05fSFQ4dWEwN2hXOURBMXQwRXhMcTNTa2xQc1dBUDE4cGdvd3FRU2cxS3lCTjRqQnB1dURnSmxmTE9HcUtnVE56VENkN1hfc1ItNWFqWDlFdVR5Mzl6aWdLUWNobVhtcHd3UXV4aUJwdmVNV0hLLW9SNlFQX3p1b3hYN1pKQk4yR0ljSXVna1dZMEYteUV6VjBRS3VGSFpaT0pXelFva1NZaENNcnNXVHNJN21VRjlzWG1MMkx0X2paN3pheU5iZDBhSDJHTnlIR3YtRTBSdF9qMA?oc=5",
-   "fuente": "El País",
-   "fecha": "2026-11-20T20:07:51.000Z"
-  },
-  {
-   "titulo": "Ganaderos, porcicultores y avicultores podrían recuperar el IVA que pagan por sus insumos",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQVFLXzZqaGZodnpjVk1kdlhGV1pnZ0cxTUxMaHJWdm80eEV1cGROV0ZFbUs1RkxKVU9vYkp4OVRGMUxYXzJCV1BHUjFseU9nbkJJSDNYZDRXNm4tcUdkWUpzUzRzbjU2R2VrWk5iQUIzUWJNc0c5dnY5bTQybEF6d3U1OEVqQ1MtTFlma2NOY0FKbzNyRWFmc0tGdUhaOW1tQ2tZdVl5WTQ0RUthMktybzVubjM?oc=5",
-   "fuente": "Revista C-Level",
-   "fecha": "2026-11-20T15:19:40.000Z"
-  },
-  {
-   "titulo": "La ley de rescate y la pescadería, por Juan Camilo Restrepo",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVkJ2OG92REJYUnl6bVQ4S0gwQ0E5Q1NqQzA3T053TnR1TFdTdWV2Snh6cWp2ejdRcm9qRTRLLTFQbHJsc09pbEhWWEVKT3daa3JBd0RldFlHYVQ5djFHNDVSNVRmMGQtSWNLQXlTamlwcjBMeVpCWGtHX1N4WlJIanJod3MxNWl2YVlDYWVDbmVHbDRUOGxoSQ?oc=5",
-   "fuente": "CAMBIO Colombia",
-   "fecha": "2026-11-20T08:00:00.000Z"
-  },
-  {
-   "titulo": "Cambios que propone el Congreso a Ley de Rescate la trasquilan casi a la mitad",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVVNuZHNWVEVKeTZ5MnRlQnZDQ2FKaVFnd3BOUk9mSEJjaVctbWZxN1RkaG5Fd1VJVEVfNXZhZVMycVhnVVhLOFBfR0laQWRCVVRLdzVMVUtFVnI3b25zc1BaeVh6UGtLN01sVERfZkR3dlpkZjN4UEJSS0ZXYUNfVk5ZcmxLRGpic29KUkRJRXRpcmJlLXhIb1k3LUZEQS01Nk5zUzNWV3ZrUjJHT29sdkxLVXJ4SEUtc2N6UGJzc0U?oc=5",
-   "fuente": "La Silla Vacía",
-   "fecha": "2026-11-20T06:01:00.000Z"
-  },
-  {
-   "titulo": "Qué queda, qué se discute y qué sale hasta ahora de la Ley de Rescate Económico",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc1RQcTlGWEF0T3k4MENqaXVxdFh0VDA4amZoX1prQWNNSjhQMExJLU8xS0dOZXh4NWtEMGFONER5RG9fZ2NmdG5VTlhuN1Q1bG9TYzl6RFdCX3NZNFhEV0VhZ1pzWkdTSXg5a19oM3JsenBock5BLVpFdVlXeWluR045UUc5eExPTmNjSzBrUmlaZ29TcHlOY1l6ak5QZGV3V3NOam9IWE1tMUdxZXFGTXpSRWNYbnJhVEgwUnNRY9IBvwFBVV95cUxPRm1hT3AxSEJOYVp1dUdZX1E4djcyOHNmU1NBOXJHSk1Kb2lRdnFiczh0MnQxeWdGRUp4OGdrUlNVNDBTVnNIQVhNYjVtOWRnaGwtN1FZVzBTbGIxcEJaVjNtQS1RT0tuYVZWbHQ5S3V4RWdEUzc1VGktcWhvLWw5Nmx1Qjc0aVQ3N0EycmtocHZYeTZsWEpfUXBlazRBZ2hMUGEtUmFVXy13NzlDZ19YZHpsMUk4M3pVVmxCb0p2RQ?oc=5",
-   "fuente": "LaRepublica.co",
-   "fecha": "2026-11-20T05:01:25.000Z"
-  },
-  {
-   "titulo": "Convocan las primeras audiencias públicas para abrir la participación en el debate de Ley de Rescate Económico",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOakptNVJ0bGFkX21nZXliV2RjeDNfTnEyWW1yQVZ4ODJYOUtFRnpxQ0RGLTRHcHpZbFB1WE1XTThCc2RTZ0N3SU9NUlFVRGNQUU9Idl96TTM0eGhaRmRWOS1RcjN3QkdUVTk1VEQyQjV4TFQxLWpVUG9sanZvank1MFEzdEllcFVMTWxBdHVsdU5yRzhYcVN5RHJiTTNXMm5WNlBnMVpEcXNOXzAtMDQzYzlaMnBFVENMVmJxSURkZlpjd1h6YXdvS1E4cTlHVWREZzZYVVpuaWk4XzU2QXB2SC1lLUJ4cTc2SUVJRjJic1piX3J3OWJGS2g5d2N5Yy1BTzVJ0gGIAkFVX3lxTE9YdW9KWEZDejJFNFBzbjNWWEt3VVJXRVU5ekVlWjR0U3RpbnFmTEVfa1FNQ2QzN01SdmRMajUycjdZMUlGYTYxWHE2RkN1aGlNbzBVWFBuRmM5aW54enYzUVFzYmpGNWZodWVUY3ZPRHZGMmJ6QjRIbkl5VUx2MW5seHpFN3B3ZlI1T0w3TUNyazA2am04LVR2bURRT2hQWUxNaUNMZXAzU0pCLXJVUHYxRGVEZVJHLTBzbUhOcE1XX2JIRDNHaVZMM2RYcl85NmRwTE9UdnJabHpxTGphRDJsMmFkZHZubTN4NlBnRXl5UVhLNm9VZFQ5N2kzQ0JpVUh5bDdUSGFZUw?oc=5",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-20T04:41:18.000Z"
-  },
-  {
-   "titulo": "Exclusión del IVA a la canasta familiar: los retos para financiar la Ley de Rescate Fiscal",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQV09TTUN1ZEttM3ROTENLazh2R2hoSWFtcURzR20xXzQ5aXViVkVnUG1lR3pqb1d6dlZlTVk2VDdhd2pjbURlUDM1TTB5MTVTUDBYYjA0WFo4WHhITDJNcHJvcVNmZXRoWHQ0UDNqRDhETDlPbEFsWjVyNDhoYVVYYl9vNXpUdzR4MGFFMDQ5bl81NF94QnE4QWxNRlRvNUZhUTVBWHZ4aWJMejJ6NlVwUVE5NVJtbV9mcVpzVmlubXVVUUt0bDd1eVJQWjRINm12eDBJVmlKczBQNWZLQzgzRNIB5gFBVV95cUxQNUs4Sm90aXdfRE1vZmo4V0VTZWZiVmp3ZTg0ejMwRnVZTjhTRkw4SjcyejRXU0llTjN0S3cxcTE3R1IwVDV1dDkzSm9VX0EyUENfSGNjVzE0V20zbkUyc0dheEZnMlBzbDhNeHl2b1BhVTN6QWVzUWpxbHM1NzNxY2dXX2VGRGdfeE1mRnJLM3NuYlV1NlJSTEpmOHpjQV8tTDBMZDcwX0p4cFpOblcyeVVvMlA5UEFZNzc0bzgwcldMYVRCN0RLaXRJelc1dkc0RFJoM0c1a2Z2YjhFbXB2N0dmdzNWZw?oc=5",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-20T00:41:44.000Z"
-  },
-  {
-   "titulo": "Así sería el cobro de IVA que plantea el Gobierno De la Espriella a los arriendos de inmuebles con fines turísticos en Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPV1dYNFRva200dGNmTDZ3UThIbXdDNjFjX19NQ2pTYlV1QWU2UlAtMXlaNEN4NXh3clZESW9ib2FrMnVsRXFobXZGcVd0d0h5UlVUMW0wSkZ1cldmakNobU5OeGV4azV3dGdNVDFnVGdhc3ZoX0lZZEFkYjNJQlplY0cyNHRaVWZPdFExM0dQbnZiVFNsQUh3TF91a1NPdl93dlIxRnhubkN4WkVObGhzNVN3QllyTmJxaENnWDVhQWNtSXNRUnR1NWFpV3BKWThGcm1OaFVsd3c4SUxHeU50VFl1TWZuaEVVYzRjQno1Y2d2V05Td3BITnFBa2UtR3BNN2fSAZwCQVVfeXFMT19uVUg5OWZXN05hOFZ0cnZpaDFRdDVqZkVTMkY5dFFFa0kzdzlRNHlidjlXTXc1ejlJbXh2N1ktX014cVRBUWY0dXZmYzdoa0drVkJ1bDhWNTNLbFl2T2NrNkVuQ1lIWl80bHFqSHRtaHJIeXdPS3Jhb0RPOENtTUlVR3pZZHFsNGg5Qms2d1ZSM3EwdUVkN2RlYnA5ci11YWw4V3B4UmUxMWVMaE13YUZvZXI1U0tkRTdoYmtDbWVSSW5yS1N0WFhFbzV0eklCTENZTGgxSGRUaEExZjJtQVVhWnJQNTVFdC1Td21LSEVSUnRwcGplcFgzeEVNSmEwOGlZQnVnNTNfcUdONlhNdzJISU11TFJTR2VhTkE?oc=5",
-   "fuente": "Infobae",
-   "fecha": "2026-11-19T21:29:00.000Z"
-  },
-  {
-   "titulo": "“Estamos dispuestos a tener una discusión responsable”: Centro Democrático por aumento del IVA",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVldKcVY3ejVUeUlRMXBpbTIxZXAxaGtKTVQ1MUFVaFFvOE1ZaTdTd0JSR1A4Y1pWOHVrN3hEZlh5UllpQ245WmJENTFNd2dtTkRobzR0dmd0WUdISnZ0STAwM0NxSDRHS1I0eVhKLWlEb3VnXzcyZTZoZFdabXM2Wk1ZaXktRDktUUpxdF9CdXVCV1B0LVY1QjVoZE45MHIyeGZRanVqaXhBcUNOVnhSUFAyQzFlVFI4cWJKMHBjU2hYYzhj0gHYAUFVX3lxTFBTMU15QkprLWVnS2Z6TFp5NEJwR0VkY1BwZEE5emtIWU9UQ0ZsOVJERW9NSXYzcURTQ2FndVJERTZib29naUZWVnZwRkJWc2tMdExOWHlXaVA0OHJMaGdsTWo4Z2hDd2o4Q2Y0LXJwQ3REam5QMFdIbVRiYlhvUmlhWm43ak1QcWEwVEp1ZDBMVThDSmVCckEtaVo3YWVNQTQ1dmxEMW1iMDYyZmhfNG1yX1FoSHNNLW56ZU9ySmhHTTQ0c2FMaWhuOHc3dDIwTDhrWFpPWlpLdw?oc=5",
-   "fuente": "Caracol Radio",
-   "fecha": "2026-11-19T21:11:41.000Z"
-  },
-  {
-   "titulo": "Los reversazos de la Ley de Rescate: qué impuestos salen, cuáles siguen y qué falta por definir",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBhRjJxSjB6eWpkUWZXSHllU0kzOGt6ZHN2bDFsdFUzNF9RTkh5dWZuTmhfQkZiTnFHRE01YWVqMnpmYmZmNF9lMEM2czJhazI5eGtjMnFWRU9hQkFYVFJGTHktZUVaSWpxQVJHZWRiRHlRR3NZMWZ1YnR5TUNMNWpzTGRXMlhyVFFvMmg5aFRxX1p4WVlLX084NmlKQW54WUZXT0NCOVpIMm9IZjRGdU10VkNNd2RHa2QzVGxxTmZqWFhNRlBBTW1WWFDSAcwBQVVfeXFMTkpURVVPZWhEZTAwc2RSX0FHSHkwSXAxSmZyUHJBY0dmNEJQN01XZWU3T0d3NkYxcnV1UFhROEVMMGVOT3ZpOHRaa0l1NmJDS3Z3cXI0Vjh4M1VmejNsZkJLMjdZblRiOThQbmhlQjMyTnhSRm9lbmIyWWdJcjdrU2dRUTJHeFRncXVjVGgtVlRRZXg1Q0xWUjNJU2pHa3lBR2tmQWZzcUVINWp1MVFvT2ZKQnNaVUNQVlZSTktqdXZRRzVtVjBoVzNvU2JC?oc=5",
-   "fuente": "La FM",
-   "fecha": "2026-11-19T17:28:15.000Z"
-  },
-  {
-   "titulo": "IVA a arriendos turísticos, sobretasa a los más ricos y más al carbono: nuevos impuestos de la Ley de Rescate | El Colombiano",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGNnTDhIZ2wtU2dqdDRvVlBPcGJXU0ZNZkNWV2FmemY5OXhzRG9fWGlWU3V4YlBmSC1Gd2dZdVJ6V0pDT05GbTRmcmRESkM3d3QwOVNzdWYwZWlFNWxsMnQ4RmxFNUJ4SXk5Y21Za21PQ0U4bWIta2xRVkJLOXlaU29KVHBWRHFvNGpqZVVVQk1XbTVBMUxNMzVDZkxTMDFzOExzeWdwYk5vZnRUREtHYUxqd2tlZ9IBuwFBVV95cUxNdGhLZmhLSnR1Y1pobVRoV2hiVVRwSGY4dF9BZVo2LUJraGd1RHRRNUdZSTlnbTBfTmRBVVBlOHdHczR4eW5WYXVqTlB3QzV0NWFxbHFRMVRKdUxMT0tOMTJLanNwRC1WdGFpSkN1bnhjd3lLOEtuWktiM1pVNFMzQUF4VVloRjNCM2JIT1hwVThUT2NLcVhQNkktVjU3TTBWMmhPemtkU1ZDVnhwTE8zVkdncHhhNnE5LUkw?oc=5",
-   "fuente": "El Colombiano",
-   "fecha": "2026-11-19T17:23:19.000Z"
-  },
-  {
-   "titulo": "¿Se acaba la devolución del IVA? Ley de Rescate cambiaría las reglas de la compensación a los hogares | El Colombiano",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMDdPeldZM2hIdTJsRHo2Y3JsVWRXaEN1RnFSZlRsUUlKcmJPb1k1SFFPTG4tVmZmRGowNEFvNWl3eDFWTzhyRnpMSmlJMDlReGhsOFd4bjBVVVJ3OS0zU1ZnS2poX2pTYTJOX0I5SEVrYkxhbE1pYjhwOFYwWWctRldyOVJLaFZ2Nks2STAwa2NqV2czWVY2TW9WeVp6MEtxYmFDd2NCSDBFdU1wYnlTLUp3U0pwQ3c0eVHSAb8BQVVfeXFMTURiUjdrSEl4bHY1dW1LNHFWbjFEdFp2Qm5NSmdUamd4TVNlaC1yamlvVVpuSTVMVXhMckFzMVdBNVNhUFhIMFphRTRCY2szaEQ2VFQ4LXp6ckFEV0VQWUJxTmhFUnVCdWVONklSTVVPNWVDbkVZb2wwcTBmYUFTM1Z5ZlcwelZyY2dEVFZNUGo2VWhQMDg2TVdOVW9Ybm5IWEJlU3JiRHlaTEs0MndXSlJPWW9tbHozU1p2V0Fycnc?oc=5",
-   "fuente": "El Colombiano",
-   "fecha": "2026-11-19T16:08:00.000Z"
-  },
-  {
-   "titulo": "Senador Andrés Forero: “Devolución del IVA ya no habrá por cambios en la reforma tributaria”",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxON2x4STBVbTRGZ1ZWZUlaVk1LMFZGdmpGSTAzMXFLd0VubHhqODZuczU2U00zeE44Y0dSblltdTBaWGQ1akliTmVSU3BSSGs1WkxlTHFMbW9Hb3NNMUllcUg5akNUR0F6dTE1b2x2R2pvMVV0UGowc0pOZjFWZmJPZnF4bFdXenl1X1VDbXl2bXdOcGRJbnhiLXhYLUgyc2g4UVNpQnBWRTBieEFwQ0tjNXZpbGcteHkwMTlabTJZdWFla05NblhyOC1jaG1DVHBWcnNNetIB1AFBVV95cUxON2x4STBVbTRGZ1ZWZUlaVk1LMFZGdmpGSTAzMXFLd0VubHhqODZuczU2U00zeE44Y0dSblltdTBaWGQ1akliTmVSU3BSSGs1WkxlTHFMbW9Hb3NNMUllcUg5akNUR0F6dTE1b2x2R2pvMVV0UGowc0pOZjFWZmJPZnF4bFdXenl1X1VDbXl2bXdOcGRJbnhiLXhYLUgyc2g4UVNpQnBWRTBieEFwQ0tjNXZpbGcteHkwMTlabTJZdWFla05NblhyOC1jaG1DVHBWcnNNeg?oc=5",
-   "fuente": "Blu Radio",
-   "fecha": "2026-11-19T14:06:39.000Z"
-  },
-  {
-   "titulo": "Dueños de carros eléctricos e híbridos tienen hasta el 15 de diciembre para pedir el certificado que habilita la devolución del IVA",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNdERGQjFHczFTc2xRY2FrcjR4dkk1eVZ5YzJBazIwSDI5alphRk5fNmVHdnF5eXVtT1ktYWEzV1BQYlgwandWSHNWdl9hSVNucmVwTXRJUHdaVFlEVjRiZkxsc2tQYVFQUGhxeUpEU3V0OVc3WExQNUF0UUlUbXQ2MktzbkFKMk1ySHNZVHYzem5iM3pOQjhScmtzQnlrOWFOSzFVeE5Jb0I2LUUxVzBscVpJV0tWMEFKNjFBcEk0a19xdFhYRWRWaFhaLUdmZFRRSGtaTzQyckJmSy11dF9xbmpmM1VtdDl2Q2MtLS0xVzZZY3pXZEdHR2lpeV9Kams5WnJJ0gGIAkFVX3lxTE9ZcDN4cVVqa0dNUzEtOUFvRzNNaHN4dVZXOEJvS2tPeEJZZDFVWGRSN3JnRVRWSFlHQ0RzTnVqckx1U2JzUDhDc01CUmZna1FBQWwyVER2SS1NRkYwQWxhMWJValN3TG5PNE5qX2dUUXZmU0pKdWY5bWR6Mk5XRF9pZUU2LWMySHpoQ1N1WUpxdU9IbjRHVnhyUUdocTNRMEF6cV9nU3dqa1I0WWJWNS1EaXh4TXVlSFhxZkp3WHlYRktJcUZIMU5kUGVncTRyV1gxM3hHQy13SWQtSVRidFpUcjZBbkdEVkVrT0FUeFdWaU5SRVh1NXFXbjJMRjU0dGptZnMxTm9kMA?oc=5",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-19T13:48:49.000Z"
-  },
-  {
-   "titulo": "Ley de Rescate Económico: estos son los productos del campo que seguirán excluidos del IVA",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT2MwWF83RkI0eWZGb3dTa1ozT3ctX3JuNGptR2FMcjJFT2h0LWp1UjlGQnBWZEk5X0RPenZ5eUV5T09RS0k5MmlYdHBxX01aZEZrZU9wY2VWTWU2VDJBRTIwRHVuVGg4TGJCUm5sVGF4Y1JhYjdaS29sY3dHOGxTdU5KcFpsdExXekFFRVdpRDQzb0FDdnlfVE1wUXpDLUVZM2ZFeDY4b1hRSE9jRjBJdlhwb1hGelFkSVVXb2lkVTF3S1FWTUREREZhV3pqR3RV?oc=5",
-   "fuente": "ELHERALDO.CO",
-   "fecha": "2026-11-19T13:24:07.000Z"
-  },
-  {
-   "titulo": "Minhacienda confirmó que el proyecto de ley de rescate económico no incluirá IVA a la canasta familiar",
-   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQc0llMHZ3dlljc3I2V1lHZE5iaXlmbElWSERNRjZuSW9FMFM2WFBQX3F4X1Nfa0hZbGN4Z3pFekp2UlhJZEYtMzF3R0x5THktblNIVzRqWmFJbkpUSUp5ZWF3OXlQcktVcjFxaVQ1SzRuMGFHSjFXak8wOWliaFpENXJoQUJiMGxJakt4U1JwWFN5TXBUWFQyYlJoTThRTUIzYmFiOHpfazhpUzh5Ql9jTlZsM2tiOTI0eEZFbEdLcl9MZ0Q3UUsyYjdBMkJhRnFOY21EX2w5c2FZZk15VGhNOEpYeEJlNVg4WVBtVElpUE1PcWZIeUFKSDczOUFWVURLSGtFMDVMdTJwUQ?oc=5",
-   "fuente": "Instituto Nacional de Contadores Públicos",
-   "fecha": "2026-11-19T13:19:23.000Z"
-  },
-  {
-   "titulo": "Ley de Rescate Económico cambia: estos son los impuestos que salen y los que siguen en discusión",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDZQSW1XV296d01xYWh5LWhGbzJrT1ZudDJpNFB3V1p3RHJiQ1RvMDBWM01Nby1VX25oTFMyVzV2UXdDdFZYa3lUWE9CeGxIVnFlVnBDTk93SFRDczFiZ3ROcmtSQmkxamxFYnNGNmFzY1NfRXVWemRiOVN0NzZDZFd1ZWZSUHV4UGxMZF95cEVnSDN4RjNnRW9iYlU0OU9fYmEyZVo2ZElic2cxSkRtRlRraGFjSnVpdkVOZGhxTTlxTmtfVm1rSVV2TG9KVXUzS0J3RlFLU0k?oc=5",
-   "fuente": "ELHERALDO.CO",
-   "fecha": "2026-11-19T13:10:09.000Z"
-  },
-  {
-   "titulo": "Así cambia la Ley de Rescate Fiscal: Gobierno retira IVA a canasta básica, salud y agroinsumos",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNclNoOVJUMHJMSW4tck9FSS1vdGxlaV9ueU4tWFp0dGRhc2tEdkFjOWN4MnJqcFA4VG9YY0trdGs1UzYtN1pab1pGb3RpZ0Fjc0Jsb3RSNGdTenMxc0NiNFFQV240T1FQcENqLXVoSE9GTUxGeEdPZ2Q4R0FMZTlQWkxOc1RGZU9LajV4YWkyd0ZBMGJtNGJuM0pnNlphS3hFT0ZTNUx5WUF0bFZBWHBYbUJqZWNINlZISDExYWdRWmpIUFc5R2tIcklnb3VZTFVKaUZ6YTZNMzBRcHPSAeABQVVfeXFMTlVLNldCbHlZN3RPMWhSbDRHVTI0Y010ZkNUc0YzaVRzMGZramVjNmlzVnJkbGgtWVBpMFJPVF9BVXF1OGZZNnVIaVhVODJPYW9rYmdxX1JmbG1BdGJKdUZJUmNiUGxQamtlUG9kMGRBa2k4ZWRUWmNReVUyWWJsYWF4NV96Y0JMTkQ0UEE1YkxLUzZXOGZNZDA3dTZXT0tDX2s0eGtHaHJ0RmJKalZ2RFpkRHBFX0U2TkFoazJkaDFlRVZCSjc4Uk9mbnNSNjdaUDFoaFl4YmVFNFVXRHZZSFE?oc=5",
-   "fuente": "Portafolio.co",
-   "fecha": "2026-11-19T11:50:48.000Z"
-  },
-  {
-   "titulo": "Así van las cuentas de la Ley de Rescate: lo que sale, lo que se mantiene y lo que sigue en discusión",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVW9fWnFlT2F4THA3WkFtS1BBNnFqYVpNd1N1U0RVbmd4VUFaVVFYVkUxb1ZuQi10S01QX3FYMnFyQkc0UnB3Q3VpNFFRVWtxV1h3TUxaYzNUZDRKOGlIQWxSRUdQTk8wT1JSNExZUGYzeEJjcGJuVlYyTm84Y3RsNFBKTGxzRHhwMGFlNmFidTFBT2RHeHg4bXVNQ0VOQWVBek9PUkc4dXRTWGFmY2RsSU1jdlY1S3RkTUVYN0EtT1VkNGtHVHZ4Wm9Ud25BSnEwQ2Nya2JMd0ZYdmFDOFNQaEtn0gHnAUFVX3lxTE1UVnE2SmVaOFZtSXoxRm5DRHZQbXZ2VzBXUDZ2Z2FteTRWZW5wNEtnODNmSmJfT2g2SEhwaG9iVDNXeUlXY2U0WFRob1dtdDBlOElYTHd4aVI1SHdZUktTcXVQcGNXelY1VVU4Z0YxbEpjMjZQWWM1dUpCV3p1d05yRW1WNVZ6aGlDd2wyQ2RBZ1B6UF9kd3JHYVNaWUdlMlJVV1ppZzF5Mk9KVDNfRlM0cUdaWHNtZlBPRXkxVHJxaTM1UVU4YXRkelFjMjdSRi04V0RVSl9uaWtyaDZlQUtuX0t3V2plMA?oc=5",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-19T10:35:57.000Z"
   }
  ]
 }
